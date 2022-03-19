@@ -769,24 +769,35 @@ body{
     margin-top: 3rem;
 }
 
-#deal__timer .time{
+#deal__timer .time #days,
+#deal__timer .time #hours,
+#deal__timer .time #minutes,
+#deal__timer .time #second{
     width: calc(100% /4);
     font-size: 40px;
     font-weight: 500;
     color: var(--primery-color);
-    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
 }
 
-#deal__timer .time:first-child{
+#deal__timer .time #days:first-child{
     border-left: transparent;
 }
 
-.time span{
+.time{
+    margin-left: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    padding-right: 30px;
+}
+
+.time .time__text{
     color: #000000;
     font-size: 12px;
     display: block;
     text-transform: uppercase;
     margin-top: 20px;
+    font-weight: 500;
+    padding-left: 15px;
 }
 /* End:Deal */
 
