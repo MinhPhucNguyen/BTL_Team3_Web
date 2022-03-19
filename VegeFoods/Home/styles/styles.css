@@ -66,7 +66,6 @@ body{
     justify-content: space-around;
     flex-grow: 1;
     padding: 0 15px;
-
 }
 
 .header__sub--icon i{
@@ -821,40 +820,34 @@ body{
     padding: 0 15px;
 }
 
-.customer__drag{
-    display: block;
-    z-index: 1;
-}
-
-.customer__stage{
-    transition: all 0s ease 0s;
-    width: 4180px;
-    transform: translate3d(-760px, 0px, 0px);
-}
-
 .personal__item{
-    width: 350px;
+    width: calc(100% /3);
     padding: 24px 24px 48px 24px;
-    float: left;
-}
-
-.customer__outer{
-    overflow: hidden;
 }
 
 .customer__content{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
-    overflow: hidden
+}
+
+.customer__stage{
+    display: flex;
+    width: 100%;
+}
+
+.personal_avatar img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .personal_avatar{
     background-image: url(../img/Customer/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp);
     background-position: center;
     background-size: cover;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin: 0 auto;
     display: block;
@@ -871,7 +864,7 @@ body{
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .personal__quote{
@@ -904,6 +897,23 @@ body{
     font-size: 18px;
 }
 
+.Cusomer__Dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Cusomer__Dots div{
+    background: rgba(0, 0, 0, 0.2);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.Cusomer__Dots .dot-1{
+    background: var(--primery-color);
+}
 
 /* End: CustomerSays */
 
@@ -1032,9 +1042,10 @@ hr{
 }
 
 .mouse{
+    width: 100%;
     position: absolute;
-    right: 50%;
-    left: 50%;
+    left: 0;
+    right: 0;
     top: -30px;
 }
 
@@ -1046,6 +1057,7 @@ hr{
     border: 2px solid #82ae46;
     background: var(--primery-color);
     position: relative;
+    margin: 0 auto;
 }
 
 .mouse__up-and-down .fa-angle-up{
