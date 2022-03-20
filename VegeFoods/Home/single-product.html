@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Single Product</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital@1&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/shop.css">
+    <link rel="stylesheet" href="./styles/single-product.css">
 </head>
 <body>
     <!-- Start:Wrapper -->
@@ -61,7 +61,7 @@
                                 <ul class="shop__sub--menu">
                                     <li class="shop__sub--item"><a href="shop.html">Shop</a></li>
                                     <li class="shop__sub--item"><a href="wishlist.html">Wishlist</a></li>
-                                    <li class="shop__sub--item"><a href="sigle-product.html">Sigle Product</a></li>
+                                    <li class="shop__sub--item"><a href="single-product.html">Single Product</a></li>
                                     <li class="shop__sub--item"><a href="cart.html">Cart</a></li>
                                     <li class="shop__sub--item"><a href="checkout.html">Checkout</a></li>
                                 </ul>
@@ -96,26 +96,112 @@
                         <span class="slider__subheading">
                             <a href="./index.html">Home</a>
                         </span>
-                        <span class="slider__subheading">Products</span>
-                        <h1 class="slider__heading">Products</h1>
+                        <span class="slider__subheading">Product</span>
+                        <span class="slider__subheading">Product Single</span>
+                        <h1 class="slider__heading">Product Single</h1>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End: Slider -->
 
-        <!-- Start: All Product -->
+        <!-- Start: Single-Product -->
         <div class="section">
             <div class="container">
-                <div class="product__menu mb-48">
-                    <ul class="product__category">
-                        <li><a href="#">All</a></li>
-                        <li><a href="#">Vegestables</a></li>
-                        <li><a href="#">Fruits</a></li>
-                        <li><a href="#">Juice</a></li>
-                        <li><a href="#">Dried</a></li>
-                    </ul>
+                <div class="product__container">
+                    <div class="product__image">
+                        <img src="./img/Products_img/anh1.webp" alt="">
+                    </div>
+                    <div class="product__content">
+                        <h3>Bell Pepper</h3>
+                        <div class="rating">
+                            <p class="rating-stars">
+                                <a href="#" class="number-rating">5.0</a>
+                                <a href="#">
+                                    <i class="fa-regular fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-regular fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-regular fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-regular fa-star"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-regular fa-star"></i>
+                                </a>
+                            </p>
+                            <p class="total-rating">
+                                <a href="#">
+                                    100 <span>Rating</span>
+                                </a>
+                            </p>
+                            <p class="sold">
+                                <a href="#">
+                                    500 <span>Sold</span>
+                                </a>
+                            </p>
+                        </div>
+                        <p class="price__single-product">
+                            <span>$120.00</span>
+                        </p>
+                        <p class="product__desc">
+                            A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                            It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until.
+                        </p>
+                        <div class="option__choose">
+                            <div class="form__group">
+                                <div class="select__wrap">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <select name="" id="" class="form__control--product">
+                                        <option value="">Small</option>
+                                        <option value="">Medium</option>
+                                        <option value="">Large</option>
+                                        <option value="">Extra Large</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input__form">
+                                <div class="input__form-btn">
+                                    <button type="button" class="quantity-left mr-8" data-type="fa-minus" data-field>
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input type="text" id="quantity" class="input-number" value="1">
+                                <div class="input__form-btn">
+                                    <button type="button" class="quantity-right ml-8" data-type="fa-plus" data-field>
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="available">
+                                <p>600 kg available</p>
+                            </div>
+                            <div class="back__btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- Start: Single-Product -->
+
+
+        <!-- Start: OurProduct-->
+        <div class="section">
+            <div class="container">
+                <div class="product__heading">
+                    <span class="product__sub--heading">Products</span>
+                    <h2>Related Products</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="container">
                 <div class="product__row--list">
                     <div class="product__inner">
                         <div class="product">
@@ -254,304 +340,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh5.webp" alt="">
-                                <span class="product__status">30%</span>
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Tomato</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="cost">$120.00</span>
-                                        <span class="price__sale">$80.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh6.webp" alt="">
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Brocolli</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh7.webp" alt="">
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Carrots</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh8.webp" alt="">
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Fruit Juice</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh9.webp" alt="">
-                                <span class="product__status">30%</span>
-
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Onion</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh10.webp" alt="">
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Apple</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh11.webp" alt="">
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Garlic</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product__inner">
-                        <div class="product">
-                            <a href="" class="product__img">
-                                <img src="./img/Products_img/anh12.webp" alt="">
-                            </a>
-                            <div class="product__text">
-                                <h3><a href="#">Chilli</a></h3>
-                                <div class="product__prices">
-                                    <div class="price">
-                                        <span class="price__sale">$120.00</span>
-                                    </div>
-                                </div>
-                                <div class="product__options">
-                                    <div class="product__item">
-                                        <a href="#" class="add-to-cart">
-                                            <span>
-                                                <i class="fa-solid fa-bars"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="buy-now">
-                                            <span>
-                                                <i class="fa-solid fa-cart-shopping"></i>
-                                            </span>
-                                        </a>
-                                        <a href="#" class="heart">
-                                            <span>
-                                                <i class="fa-solid fa-heart"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="number__next">
-                    <div class="number__inner">
-                        <ul>
-                            <li><a href="#">
-                                <i class="fa-solid fa-angle-left"></i>
-                            </a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">
-                                <i class="fa-solid fa-angle-right"></i>
-                            </a></li>
-                        </ul>
-                    </div>
+                    </div>   
                 </div>
             </div>
         </div>
-        <!-- End: All Product -->
+        <!-- End: OurProduct-->
 
         <!-- Start: Email -->
         <div class="section no-pt no-pb  gb-email">
@@ -698,9 +491,8 @@
             </div>
         </div>
         <!-- End:Footer -->
-
-
     </div>
     <!-- End:Wrapper -->
+
 </body>
 </html>
