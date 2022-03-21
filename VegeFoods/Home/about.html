@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegefoods</title>
-    <link rel="stylesheet" href="./styles/about.css">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital@1&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/about.css">
 </head>
 <body>
     <div class="app">
@@ -83,49 +87,67 @@
         </div>
         <!-- End Header -->
 
-        <div class="about-us">
-            <img src="./img/Slider/anh1.webp" alt="">
-            <div class="text-wrap">
-                <p>Home about us</p>
-                <h1>About us</h1> 
-            </div>
-        </div>    
-
-        <div class="description">
-            <div class="row">
-                <div class="col-1">
-                    <div class="video">
-                        <iframe width="476px" height="568px" src="https://www.youtube.com/embed/9fh1H8OMFsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="text-wrap">
-                        <span>Subcribe to our Newsletter</span>
-                        <p>Get e-mail updates about our latest shops and special offers</p>
-                    </div>
-                </div>
-
-                <div class="col-2">
-                    <div class="text-wrap">
-                        <h1>Welcome to Vegefoods an eCommerce website</h1>
-                        <span class="span-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</span>
-                        <span class="span-2">But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</span>
-                        <button>Shop now</button>
-                    </div>
-
-                    <div class="inpt-wrap">
-                        <input type="text" name="" id="" placeholder="Enter email address">
-                        <div class="subscribe">
-                            subscribe
-                        </div>
+        <!-- Start: Slider -->
+        <div id="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__text">
+                        <span class="slider__subheading">
+                            <a href="./index.html">Home</a>
+                        </span>
+                        <span class="slider__subheading">About us</span>
+                        <h1 class="slider__heading">About us</h1>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- End: Slider -->  
 
-            <div class="about-us__count">
-                <img src="./img/Section_backgr/xbg_3.jpg.pagespeed.ic.PrJrFBKJyM.webp" alt="">
+        <div class="section section-backgr no-pb">
+            <div class="container ">
+                <div class="video">
+                    <iframe width="476px" height="568px" src="https://www.youtube.com/embed/9fh1H8OMFsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="text-wrap">
+                    <h1>Welcome to Vegefoods an eCommerce website</h1>
+                    <p class="para-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p class="para-2">But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+                    <p><a href="#">Shop now</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start: Email -->
+        <div class="section no-pt no-pb  gb-email">
+            <div class="container pd-top-bottom">
+                <div class="Email__content">
+                    <div class="Email__item">
+                        <h2>Subcribe to our Newsletter</H2>
+                        <span>Get e-mail updates about our latest shops and special offers</span>
+                    </div>
+                    <div class="Email__form">
+                        <form action="#" class="subscribe__form">
+                            <div class="form__input">
+                                <input type="text" onkeyup="setTotal()" class="form__control" placeholder="Enter email address">
+                                <input type="submit" value="Subscribe" class="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: Email -->
+
+        <!-- Start: Deal-->
+        <div class="section">
+            <img src="./img/Section_backgr/xbg_3.jpg.pagespeed.ic.PrJrFBKJyM.webp" alt="">
+            <div class="overlay"></div>
+            <div class="container">
                 <div class="counter">
                     <div class="customer counter-up">
                         <p class="number">10000</p>
-                        <span>CUSTOMERS</span>
+                        <span>HAPPY CUSTOMERS</span>
                     </div>
                     <div class="branches counter-up">
                         <p class="number">100</p>
@@ -142,117 +164,244 @@
                 </div>
             </div>
         </div>
-
-        <!-- feedback -->
-        <div class="feedback">
-            <div class="feedback-wrap">
-                <div class="testimony-wrap">
-                    <div class="testimony">
-                        <p>Testimony</p>
-                        <h1>Our satisfied customer says</h1>
-                        <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</h2>
+        <!-- End: Deal-->
+        
+        <div class="section">
+            <div class="container">
+                <div class="customer__say">
+                    <div class="customer__heading">
+                        <span class="subheading">Testimony</span>
+                        <h2 class="mb-4">Our satisfied customer says</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
                     </div>
                 </div>
-            
-                <div class="text-box">  
-                    <div class="box box-1">
-                        <div class="img-wrap">
-                            <img src="./img/Customer/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
+                <div class="customer__content">
+                    <div class="customer__inner">
+                        <div class="customer__stage">
+                            <div class="personal__item mr-30">
+                                <div class="personal_avatar mb-48">
+                                    <span class="personal__quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="personal__text text-align-center">
+                                    <p class="pl-24 mb-48 border-left">
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </p>
+                                    <p class="personal__name">Nam Hoang</p>
+                                    <span class="personal__position">System Analysy</span>
+                                </div>
+                            </div>
+                            <div class="personal__item mr-30">
+                                <div class="personal_avatar mb-48">
+                                    <img src="./img/Customer/Phuc_nguyen.jpg" alt="">
+                                    <span class="personal__quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="personal__text text-align-center">
+                                    <p class="pl-24 mb-48 border-left">
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </p>
+                                    <p class="personal__name">Phuc Nguyen</p>
+                                    <span class="personal__position">System Analysy</span>
+                                </div>
+                            </div>
+                            <div class="personal__item mr-30">
+                                <div class="personal_avatar mb-48">
+                                    <span class="personal__quote">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="personal__text text-align-center">
+                                    <p class="pl-24 mb-48 border-left">
+                                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                    </p>
+                                    <p class="personal__name">Minh Nguyen</p>
+                                    <span class="personal__position">System Analysy</span>
+                                </div>
+                            </div>
                         </div>
-                        <p class="text-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="text-2">Garreth Smith</p>
-                        <span>MARKETING MANAGER</span>
-                    </div>
-
-                    <div class="box box-2">
-                        <div class="img-wrap">
-                            <img src="./img/Customer/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
-                        </div>
-                        <p class="text-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="text-2">Garreth Smith</p>
-                        <span>MARKETING MANAGER</span>
-                    </div>
-
-                    <div class="box box-3">
-                        <div class="img-wrap">
-                            <img src="./img/Customer/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
-                        </div>
-                        <p class="text-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="text-2">Garreth Smith</p>
-                        <span>MARKETING MANAGER</span>
-                    </div>
-
-                    <div class="box box-4">
-                        <div class="img-wrap">
-                            <img src="./img/Customer/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
-                        </div>
-                        <p class="text-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="text-2">Garreth Smith</p>
-                        <span>MARKETING MANAGER</span>
-                    </div>
-
-                    <div class="box box-5">
-                        <div class="img-wrap">
-                            <img src="./img/Customer/xperson_1.jpg.pagespeed.ic.a2MnMHMs44.webp" alt="">
-                        </div>
-                        <p class="text-1">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <p class="text-2">Garreth Smith</p>
-                        <span>MARKETING MANAGER</span>
                     </div>
                 </div>
-
-                <div class="circle-wrap">
-                    <input type="radio" class="circle" name="checked" checked></input>
-                    <input type="radio" class="circle" name="checked"></input>
-                    <input type="radio" class="circle" name="checked"></input>
-                    <input type="radio" class="circle" name="checked"></input>
-                    <input type="radio" class="circle" name="checked"></input>
+                <div class="Cusomer__Dots">
+                    <div class="dot-1"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </div>
+        <!-- End: CustomerSays -->
 
-        <!-- support -->
-        <div class="support">
-            <div class="support-degree">
-                <div class="ship-circle color-1">
-                    <div class="ship-circle--text">
+        <!-- Start: Media -->
+        <div class="section section-backgr">
+            <div class="container">
+                <div class="media__item">
+                    <div class="media__logo ship">
                         <i class="fa-solid fa-truck-fast"></i>
                     </div>
-                </div>
-                <p>FREE SHIPPING</p>
-                <span>ON ORDER OVER $100</span>
-            </div> 
-            
-            <div class="support-degree">
-                <div class="ship-circle color-2">
-                    <div class="ship-circle--text">
-                        <i class="fa-solid fa-tree"></i>                    
+                    <div class="media__text">
+                        <h3>Free Shipping</h3>
+                        <p>On order over $100</p>
                     </div>
                 </div>
-                <p>ALWAYS FRESH</p>
-                <span>PRODUCT WELL PACKAGE</span>
-            </div> 
-
-            <div class="support-degree">
-                <div class="ship-circle color-3">
-                    <div class="ship-circle--text">
-                        <i class="fa-solid fa-medal"></i>                   
+                <div class="media__item">
+                    <div class="media__logo fresh">
+                        <i class="fa-solid fa-tree"></i>        
+                    </div>
+                    <div class="media__text">
+                        <h3>Always Fresh</h3>
+                        <p>Product well package</p>
                     </div>
                 </div>
-                <p>SUPERIOR QUALITY</p>
-                <span>QUALITY PRODUCTS</span>
-            </div> 
-
-            <div class="support-degree">
-                <div class="ship-circle color-4">
-                   <div class="ship-circle--text">
-                        <i class="fa-solid fa-phone"></i>                   
+                <div class="media__item">
+                    <div class="media__logo quality">
+                        <i class="fa-solid fa-medal"></i>  
+                    </div>
+                    <div class="media__text">
+                        <h3>Superior Quality</h3>
+                        <p>Quality Products</p>
                     </div>
                 </div>
-                <p>SUPPORT</p>
-                <span>24/7 SUPPORT</span>
-            </div> 
+                <div class="media__item">
+                    <div class="media__logo support">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <div class="media__text">
+                        <h3>Support</h3>
+                        <p>24/7 Support</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- End: Media -->
+
+        <!-- Start:Footer -->
+        <div class="section">
+        <div class="container">
+            <div class="mouse">
+                <a href="#" class="mouse__icon">
+                    <div class="mouse__up-and-down">
+                        <span>
+                            <i class="fa-solid fa-angle-up"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__col">
+                    <div class="col__text--vegefoods">
+                        <h2 class="col__heading">Vegefoods</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                        <ul class="socials">
+                            <li class="social__logo">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="social__logo">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="social__logo">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="col__text">
+                        <h2 class="col__heading">Menu</h2>
+                        <ul class="footer__menu">
+                            <li class="footer__item">
+                                <a href="#">Shop</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Journal</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="col__text--helps">
+                        <h2 class="col__heading">Help</h2>
+                        <div class="footer__helps--row">
+                            <ul class="footer__menu--helps mr-24">
+                                <li class="footer__item">
+                                    <a href="#">Shipping Information</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Returns & Exchange</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__menu--helps">
+                                <li class="footer__item">
+                                    <a href="#">FAQs</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="col_text-question">
+                        <h2 class="col__heading">Have a Questions?</h2>
+                        <ul class="footer__menu--question">
+                            <li class="footer__item">
+                                <span class="question-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <span class="question__contact">
+                                    203 Fake St. Mountain View, San Francisco, California, USA
+                                </span>
+                            </li>
+                            <li class="footer__item mb-15">
+                                <span class="question-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span >
+                                <span class="question__contact">
+                                    +84 645 1231 456
+                                </span>
+                            </li>
+                            <li class="footer__item">
+                                <span class="question-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <span class="question__contact">
+                                    team3@gmail.com
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <div class="end__inner">
+                    <p>
+                        Copyright ©
+                        <script>document.write(new Date().getFullYear());</script>
+                        2022 All rights reserved | This template is made with 
+                        <i class="fa-solid fa-heart"></i>
+                        by <span>MyTeam</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End:Footer -->
     </div>
     <script src="./js/about.js"></script>
 </body>

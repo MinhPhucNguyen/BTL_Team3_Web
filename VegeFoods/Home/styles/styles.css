@@ -766,6 +766,7 @@ body{
     display: flex;
     width: 80%;
     margin-top: 3rem;
+    z-index: 1;
 }
 
 #deal__timer .time #days,
