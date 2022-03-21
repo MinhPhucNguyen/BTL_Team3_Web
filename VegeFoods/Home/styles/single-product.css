@@ -373,13 +373,17 @@ body{
     position: relative;
 }
 
+
 .input__form-btn .quantity-right::after,
 .input__form-btn .quantity-left::after{
     content: "";
     position: absolute;
     background: var(--primery-color);
+    color: #000000;
     display: block;
     left: 0;
+    right: 0;
+    top: 0;
     bottom: 0;
     opacity: 0;
     transition: all 0.8s;
