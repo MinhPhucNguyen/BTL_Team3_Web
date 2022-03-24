@@ -1,48 +1,3 @@
-// const headerContainer = document.getElementsByClassName("header__container");
-// const linksContainer = document.querySelector(".header__nav");
-
-// window.addEventListener("scroll", function () {
-//   const scrollHeight = window.pageYOffset;
-//   const navHeight = headerContainer.getBoundingClientRect().height;
-//   if (scrollHeight > navHeight) {
-//     header.classList.add("fixed-header");
-//   } 
-//   else {
-//     headerContainer.classList.remove("fixed-header");
-//   }
-// });
-
-// const scrollLinks = document.querySelectorAll(".header__nav--link");
-// scrollLinks.forEach((link) => {
-//   link.addEventListener("click", (e) => {
-//     // prevent default
-//     e.preventDefault();
-//     // navigate to specific spot
-//     const id = e.currentTarget.getAttribute("href").slice(1);
-//     const element = document.getElementById(id);
-
-//     const navHeight = headerContainer.getBoundingClientRect().height;
-//     const containerHeight = linksContainer.getBoundingClientRect().height;
-//     const fixedNav = headerContainer.classList.contains("fixed-header");
-//     let position = element.offsetTop - navHeight;
-
-//     if (!fixedNav) {
-//       position = position - navHeight;
-//     }
-//     if (navHeight > 82) {
-//       position = position + containerHeight;
-//     }
-
-//     window.scrollTo({
-//       left: 0,
-//       top: position,
-//     });
-//     // close
-//     linksContainer.style.height = 0;
-//   });
-// });
-
-
 var get_Day = document.querySelector("#days")
 var get_Hours = document.querySelector("#hours")
 var get_Minutes = document.querySelector("#minutes")
@@ -61,10 +16,10 @@ function DateofIndex(){
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    get_Day.innerText = days
-    get_Hours.innerHTML = hours
-    get_Minutes.innerHTML = minutes
-    get_Second.innerHTML = seconds
+    get_Day.innerText= days
+    get_Hours.innerText = hours
+    get_Minutes.innerText = minutes
+    get_Second.innerText = seconds
 }
 
 setInterval(DateofIndex, 1000)
