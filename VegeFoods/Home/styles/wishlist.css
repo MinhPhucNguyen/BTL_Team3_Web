@@ -366,7 +366,7 @@ tbody tr td.product__img img{
     font-weight: 400;
 }
 
-.quanlity .input__group{
+.quantity .input__group{
     display: flex;
     align-items: stretch;
     height: 54px;
@@ -376,6 +376,7 @@ tbody tr td.product__img img{
     font-size: 14px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
+    outline: none;
 }
 
 .total,
