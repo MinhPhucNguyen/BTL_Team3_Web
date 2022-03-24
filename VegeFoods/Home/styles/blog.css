@@ -311,13 +311,13 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .desciption .text-wrap button:hover {
     color: var(--primery-color);
-    background-color: #fff;
+    background: transparent;
     border: 1px solid var(--primery-color);
-    transition: all 0.2s linear;
 }
 
 
