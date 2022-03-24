@@ -3,52 +3,18 @@
     --text-color: #212529;
     --white-text: #fff;
     --lora-font: "Lora", Georgia, serif;
-    --lightgray-color: #e6e6e6;
 }
 
 body{
     font-family: "Poppins", Arial, sans-serif;
+    scroll-behavior: smooth;
+    height: 100vh;
 }
 
-.mb-4{
-    margin-bottom: 24px !important; 
-}
-
-.mb-48{
-    margin-bottom: 48px !important;
-}
-
-.mb-15{
-    margin-bottom: 15px !important;
-}
-
-.pl-16{
-    padding-left: 16px !important;
-}
-
-.mr-30{
-    margin-right: 30px !important;
-}
-
-.mr-24{
-    margin-right: 24px !important;
-}
-
-.pl-24{
-    padding-left: 24px !important;
-}
-
-.mt-48{
-    margin-top: 48px;
-}
-
-.section{
+.wrapper {
     width: 100%;
-    padding: 90px 0;
-    display: block;
 }
 
-/* Start:Header */
 #header{
     width: 100%;
 }
@@ -102,6 +68,7 @@ body{
     max-height: 100%;
     box-shadow: 0px 1px 2px rgba(211, 210, 210, 0.3);
     z-index: 3;
+    /* background: var(--white-text); */
 }
 
 .header__inner{
@@ -227,285 +194,166 @@ body{
     color: var(--text-color);
 }
 
-/* End: Header */
+/* Slider */
 
-/* Start: Slider */
-#slider{
+.slider {
     width: 100%;
-    overflow: hidden;
-    padding: 150px 0;
-    background-image: url(../img/Slider/anh1.webp);
-    background-size: cover;
-    background-position: center;
+    height: 368px;
+    position: relative;
 }
 
-.container{
-    width: 75%;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.slider__text {
+.slider-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    line-height: 1.5;
 }
 
-.slider__text .slider__subheading a{
-    margin-right: 8px;
-}
-
-.slider__text .slider__subheading a,
-.slider__text .slider__subheading{
+.slider-text p {
     font-size: 12px;
-    font-weight: 300px;
-    color: var(--white-text);
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-.slider__heading{
-    color: var(--white-text);
-    font-size: 30px;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-/* End: Slider */
-
-/* Start: Bill-Details */
-.bill-inner{
-    display: flex;
-    justify-content: center !important;
-    margin-right: -15px;
-    margin-left: -15px;
+.slider-text h1 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
 }
 
-.bill-details{
+/* Container */
+.container {
     width: 100%;
-    padding: 0 15px;
-    max-width: 58.33333%;
-    display: block;
+    /* height: 500px;   */
+    padding: 56px 0;
 }
 
-.billing-form h3{
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 24px;
-}
-
-.all-form-input{
+.container .row {
+    width: 80%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end !important;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: auto;
 }
 
-.form-group{
-    width: 45%;
-    margin: 0 15px;
+.container .row .col-1 {
+    /* background-color: red; */
+    width: 66%;
+    height: 100%;
 }
 
-.form-group-country{
-    width: 100%;
-    margin-right: unset;
+.container .row .col-2 {
+    /* background-color: #212529; */
+    width: 34%;
+    height: 1000px;
 }
 
-.form-group label{
-    display: inline-block;
-    font-size: 15px;
-    line-height: 1.8;
-    color: gray;
-    margin-bottom: 8px;
-}
-
-.select-wrap {
-    width: 101%;
-}
-
-.form-group .form-control{
-    display: block;
-    width: calc(100% - 34px);
-    height: 58px;
-    padding: 0 15px;
-    margin-bottom: 16px;
-}
-
-.w-100{
-    max-width: 100%;
-}
-
-.payment{
+.desciption {
     display: flex;
-    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 44px 0;
 }
 
-.cart-wrap{
-    display:  block;
-    padding: 0 15px;
+.desciption .image-wrap img {
+    width: 276px;
+    height: 246px;
+    object-fit: cover;
+}
+
+.desciption .text-wrap {
     width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 10px;
 }
 
-.cart-text{
-    display: block;
-    padding: 24px;
-    border: 1px solid var(--lightgray-color);  
+.desciption .text-wrap p {
+    font-size: 12px;
+    margin-top: 10px;
 }
 
-.cart-text h3{
+.desciption .text-wrap p i {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.desciption .text-wrap h1{
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.desciption .text-wrap h1:hover {
+    color: var(--primery-color);
+    transition: all 0.2s linear;
+}
+
+.desciption .text-wrap h2 {
+    line-height: 1.6;
     font-size: 16px;
-    margin-bottom: 24px;
+    color: rgba(0, 0, 0 , 0.7);
+    margin-bottom: 20px;
 }
 
-.flex-price{
-    display: flex;
-    margin-bottom: 16px;
-    line-height: 1.5;
-}
-
-.flex-price span{
-    font-size: 15px;
-    width: 50%;
-    color: gray;
-}
-
-hr{
-    border-top: var(--lightgray-color);
-}
-
-.total-uppercase{
-    text-transform: uppercase;
-}
-
-.flex-price .price-bold{
-    color: #000;
-    font-weight: 600;
-}
-
-.cart-text .payment-heading{
-    font-size: 24px;
-}
-
-.form-group-radio .radio{
-    width: 100%;
-    margin-bottom: 24px;
-}
-
-.form-group-radio .radio label{
-    font-size: 15px;
-    color: gray;
-    line-height: 1.5;
-}
-
-.cart-text p{
-    display: block;
-}
-
-.cart-text p a{
-    width: calc(100% - 48px);
-    text-align: center;
-    background: var(--primery-color);
-    display: inline-block;
-    padding: 16px 24px;
-    color: var(--white-text);
-    border-radius: 50px;
-}
-
-/* Start:Email */
-.no-pt{
-    padding-top: 0 !important;
-}
-
-.no-pb{
-    padding-bottom: 0 !important;
-}
-
-.gb-email{
-    background: #f7f6f2!important;
-}
-
-.pd-top-bottom{
-    padding: 24px 0px
-} 
-
-.Email__content{
-    width: 100%;
-    margin: 0 -15px;
-    display: flex;
-    padding: 3rem 0;
-}
-
-.Email__form,
-.Email__item{
-    width: 50%;
-    line-height: 1.5;
-    padding: 0 15px;
-}
-
-.Email__item h2{
-    font-size: 22px;
-}
-
-.Email__item span{
-    color: gray;
-}
-
-.Email__form{
-    display: flex;
-    align-items: center;
-}
-
-.subscribe__form{
-    width: 100%;
-    display: block;
-}
-
-.subscribe__form div{
-    display: flex;
-    border: none;
-    background: var(--white-text);
-}
-
-.form__control{
-    background: var(--white-text);
-    width: 100%;
-}
-
-.form__input input{
-    background: var(--white-text);
+.desciption .text-wrap button {
+    padding: 12px 26px;
+    font-size: 16px;
+    background-color: var(--primery-color);
+    color: #fff;
+    border-radius: 20px;
     border: none;
     outline: none;
-    font-size: 16px;
-    color: black;
-    font-weight: 300;
+    cursor: pointer;
 }
 
-.form__input .form__control{
-    height: 38px;
-    width: 100%;
-    padding: 6px 12px;
+.desciption .text-wrap button:hover {
+    color: var(--primery-color);
+    background-color: #fff;
+    border: 1px solid var(--primery-color);
+    transition: all 0.2s linear;
 }
 
-.form__input .Submit{
-    background:var(--primery-color);
-    font-size: 12px;
-    padding: 1px 16px;
-    color: var(--white-text);
-    border-left: 1px solid #82ae46;
-    transition: 0.3s;
+
+.involve .input-wrap {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #ccc;
 }
 
-.form__input .Submit:hover{
-    opacity: 0.8;
-    transform: scale(0.98);
+.involve .input-wrap input {
+    height: 100%;
+    width: 70%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
 }
-/* End: Email */
 
-/* Start: Footer */
+.involve .input-wrap i {
+    margin-left: 10px;
+}
+
+.involve .categories {
+    margin-top: 80px;
+}
+
+.involve .categories h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.involve .categories .food {
+    display: flex;
+    justify-content: space-between;
+} 
+
+/* Footer */
 .section{
     position: relative;
 }
@@ -675,4 +523,30 @@ a{
     font-weight: 500;
     letter-spacing: normal;
 }
+
+.section{
+    width: 100%;
+    padding: 90px 0;
+    display: block;
+    position: relative;
+    background-color: rgba(247, 239, 239, 0.7);
+}
+
+.section .container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
 /* End: Footer */
+
+
+
+
+
+
+
+

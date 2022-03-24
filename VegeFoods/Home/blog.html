@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cart</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital@1&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="stylesheet" href="./styles/blog.css">
 </head>
 <body>
-    <!-- Start:Wrapper -->
-    <div id="wrapper">
-        <!-- Start:Header -->
+    <div class="wrapper">
+
+        <!-- Header -->
         <div id="header">
             <div class="header__sub--contacts">
                 <div class="header__sub--inner">
@@ -86,182 +86,143 @@
                 </div>
             </div>
         </div>
-        <!-- End:Header -->
-
-        <!-- Start: Slider -->
-        <div id="slider">
-            <div class="container">
-                <div class="slider__inner">
-                    <div class="slider__text">
-                        <span class="slider__subheading">
-                            <a href="./index.html">Home</a>
-                        </span>
-                        <span class="slider__subheading">Checkout</span>
-                        <h1 class="slider__heading">checkout</h1>
-                    </div>
-                </div>
+        
+        <!-- Slider -->
+        <div class="slider">
+            <img src="./img/Slider/anh1.webp" alt="">
+            <div class="slider-text">
+                <p>H O M E  B L O G</p>
+                <h1>B L O G</h1>
             </div>
         </div>
-        <!-- End: Slider -->
 
-        <!-- Start: Bill-Details -->
-        <div class="section">
-            <div class="container">
-                <div class="bill-inner">
-                    <div class="bill-details">
-                        <form action="#" class="billing-form">
-                            <h3>Billing Details</h3>
-                            <div class="all-form-input">
-                                <div class="form-group">
-                                    <label for="firstname">First Name</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group form-group-country">
-                                    <label for="country">State / Country</label>
-                                    <div class="select-wrap">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">VietNam</option>
-                                            <option value="">France</option>
-                                            <option value="">Spain</option>
-                                            <option value="">Tokyo</option>
-                                            <option value="">Italia</option>
-                                            <option value="">Japan</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Street Address</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname"></label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Town / City</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Postcode / ZIP *</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Phone</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastname">Email Address</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="radio">
-                                    <label for="">
-                                        <input type="radio" name="checked"> Create an Account?
-                                    </label>
-                                    <label for="">
-                                        <input type="radio" name="checked">Ship to different address
-                                    </label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="payment">
-                        <div class="cart-wrap mb-48 mt-48">
-                            <div class="cart-text">
-                                <h3>Cart Total</h3>
-    
-                                <p class="flex-price">
-                                    <span>Subtotal</span>
-                                    <span>$20.60</span>
-                                </p>
-                                <p class="flex-price">
-                                    <span>Delivery</span>
-                                    <span>$0.00</span>
-                                </p>
-                                <p class="flex-price">
-                                    <span>Discount</span>
-                                    <span>$3.00</span>
-                                </p>
-    
-                                <hr>
-    
-                                <p class="flex-price">
-                                    <span class="total-uppercase">Total</span>
-                                    <span class="price-bold">$17.60</span>
-                                </p>
-    
-                            </div>
+        <!-- Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="desciption">
+                        <div class="image-wrap">
+                            <img src="./img/Blog_img/anh1.webp" alt="">
                         </div>
 
-                        <div class="cart-wrap">
-                            <div class="cart-text">
-                                <h3 class="payment-heading">Payment Method</h3>
-                                <div class="form-group-radio">
-                                    <div class="radio">
-                                        <label for="">
-                                            <input type="radio"> Direct Bank Tranfer
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group-radio">
-                                    <div class="radio">
-                                        <label for="">
-                                            <input type="radio"> Check Payment
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group-radio">
-                                    <div class="radio">
-                                        <label for="">
-                                            <input type="radio"> Paypal
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form-group-radio">
-                                    <div class="radio">
-                                        <label for="">
-                                            <input type="checkbox"> I have a read and accept the terms and conditions
-                                        </label>
-                                    </div>
-                                </div>
-                                
-                                <p>
-                                    <a href="checkout.html" class="coupon-btn">Place an order</a>
-                                </p>
+                        <div class="text-wrap">
+                            <p>July 20, 2019 Admin
+                                <i class="fa-solid fa-message-dots"></i>
+                            </p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="desciption">
+                        <div class="image-wrap">
+                            <img src="./img/Blog_img/anh2.webp" alt="">
+                        </div>
+
+                        <div class="text-wrap">
+                            <p>July 20, 2019 Admin
+                                <i class="fa-solid fa-message-dots"></i>
+                            </p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    
+                    <div class="desciption">
+                        <div class="image-wrap">
+                            <img src="./img/Blog_img/anh3.webp" alt="">
+                        </div>
+
+                        <div class="text-wrap">
+                            <p>July 20, 2019 Admin
+                                <i class="fa-solid fa-message-dots"></i>
+                            </p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="desciption">
+                        <div class="image-wrap">
+                            <img src="./img/Blog_img/anh4.webp" alt="">
+                        </div>
+
+                        <div class="text-wrap">
+                            <p>July 20, 2019 Admin
+                                <i class="fa-solid fa-message-dots"></i>
+                            </p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="desciption">
+                        <div class="image-wrap">
+                            <img src="./img/Blog_img/anh5.webp" alt="">
+                        </div>
+
+                        <div class="text-wrap">
+                            <p>July 20, 2019 Admin
+                                <i class="fa-solid fa-message-dots"></i>
+                            </p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+
+                    <div class="desciption">
+                        <div class="image-wrap">
+                            <img src="./img/Blog_img/anh6.webp" alt="">
+                        </div>
+
+                        <div class="text-wrap">
+                            <p>July 20, 2019 Admin
+                                <i class="fa-solid fa-message-dots"></i>
+                            </p>
+                            <h1>Even the all-powerful Pointing has no control about the blind texts</h1>
+                            <h2>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="involve">
+                        <div class="input-wrap">
+                            <input type="text" name="" id="" placeholder="Search...">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>                    
+                        
+                        <div class="categories">
+                            <h1>Categories</h1>
+                            <div class="vegetables food">
+                                <p>Vegetables</p>
+                                <span>(12)</span>
+                            </div>
+                            <div class="fruits food">
+                                <p>Fruits</p>
+                                <span>(22)</span>
+                            </div>
+                            <div class="Juice food">
+                                <p>Juice</p>
+                                <span>(37)</span>
+                            </div>
+                            <div class="Dries food">
+                                <p>Dries</p>
+                                <span>(42)</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Start: Bill-Details -->
 
-        <!-- Start: Email -->
-        <div class="section no-pt no-pb  gb-email">
-            <div class="container pd-top-bottom">
-                <div class="Email__content">
-                    <div class="Email__item">
-                        <h2>Subcribe to our Newsletter</H2>
-                        <span>Get e-mail updates about our latest shops and special offers</span>
-                    </div>
-                    <div class="Email__form">
-                        <form action="#" class="subscribe__form">
-                            <div class="form__input">
-                                <input type="text" onkeyup="setTotal()" class="form__control" placeholder="Enter email address">
-                                <input type="submit" value="Subscribe" class="Submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End: Email -->
-
-        <!-- Start:Footer -->
+        <!-- Footer -->
         <div class="section">
             <div class="container">
                 <div class="mouse">
@@ -384,10 +345,6 @@
                 </div>
             </div>
         </div>
-        <!-- End:Footer -->
     </div>
-    <!-- End:Wrapper -->
-
-    <script src="./js/wishlist.js"></script>
 </body>
-</html>s
+</html>
