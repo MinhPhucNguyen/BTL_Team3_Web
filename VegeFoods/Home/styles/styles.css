@@ -241,11 +241,8 @@ body{
 
 .fix-header .header__nav--list a{
     color: #000000;
-}
+} */
 
-.show-links {
-    height: 200px;
-  } */
 /* End: Fix-Header */
 
 /* End: header */
@@ -1016,6 +1013,7 @@ hr{
 .Email__form{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .subscribe__form{

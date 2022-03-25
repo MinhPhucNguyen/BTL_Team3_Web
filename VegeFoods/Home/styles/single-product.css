@@ -638,6 +638,7 @@ body{
 .Email__form{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .subscribe__form{

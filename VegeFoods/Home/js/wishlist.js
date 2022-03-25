@@ -13,3 +13,4 @@ function setTotal() {
 }
 
 setTotal()
+
