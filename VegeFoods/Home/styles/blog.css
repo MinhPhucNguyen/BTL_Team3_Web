@@ -685,7 +685,7 @@ a{
     padding: 90px 0;
     display: block;
     position: relative;
-    background-color: rgba(247, 239, 239, 0.7);
+    background: #f7f6f2;
 }
 
 .section .container {
