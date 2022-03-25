@@ -6,6 +6,10 @@
     --lightgray-color: #e6e6e6;
 }
 
+.mr-24{
+    margin-right: 24px !important;
+}
+
 body{
     font-family: "Poppins", Arial, sans-serif;
     width: 100%;
@@ -132,6 +136,7 @@ body{
 .header__nav--item a{
     font-size: 11px;
     letter-spacing: unset;
+    font-weight: 500;
 }
 
 .header__nav--item .fa-sort-down{
@@ -219,6 +224,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    letter-spacing: 3px;
 }
 
 .slider-text p {
@@ -230,48 +236,57 @@ body{
 .slider-text h1 {
     font-size: 32px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 800;
+}
+
+.slider__heading{
+    color: var(--white-text);
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 /* Container */
-.container {
+.container-contact {
     width: 100%;
     background-color: #f3f2f2;
     padding: 90px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container-wrap {
     width: 80%;
 }
 
-.row-1 {
+.container-wrap .row-1 {
     width: 100%;
     display: flex;
-    text-align: center;
 }
 
-.container .contact {
+.container-contact .contact {
     width: 25%;
     background-color: #fff;
     color: #999;
     line-height: 1.8;
     padding: 44px 8px;
     font-size: 16px;
+    text-align: center;
 }
 
-.container .contact:first-child {
+.container-contact .contact:first-child {
     margin-right: 16px;
 }
 
-.container .contact:nth-child(2),
-.container .contact:nth-child(3) {
+.container-contact .contact:nth-child(2),
+.container-contact .contact:nth-child(3) {
     margin: 0 16px;
 }
 
-.container .contact:last-child {
+.container-contact .contact:last-child {
     margin-left: 16px;
 }
 
@@ -308,6 +323,7 @@ body{
     height: 80%;
 }
 
+.row-2 .col-2 .login-form textarea,
 .row-2 .col-2 .login-form input {
     padding: 16px 266px 16px 20px;
     font-size: 15px;
@@ -341,24 +357,24 @@ body{
     padding: 60px 266px 60px 20px;
 }
 
-/* Footer */
+/* Start: Footer */
 .section{
+    position: relative;
     width: 100%;
     padding: 90px 0;
     display: block;
     position: relative;
-    background-color: #fff
 }
 
-.section .container {
+.container{
     width: 75%;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #fff
 }
+
 .mouse{
     width: 100%;
     position: absolute;
@@ -470,6 +486,15 @@ body{
     margin-bottom: 1.5rem;
 }
 
+.footer__item a,
+.footer__menu .footer__item a{
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #000000;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
 .footer__menu--helps .footer__item,
 .footer__menu .footer__item{
     display: block;
@@ -510,4 +535,12 @@ body{
     color: var(--primery-color);
     cursor: pointer;
 }
+
+a{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+/* End: Footer */
+
 
