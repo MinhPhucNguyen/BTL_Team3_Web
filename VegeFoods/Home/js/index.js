@@ -24,7 +24,10 @@ function DateofIndex() {
 
 setInterval(DateofIndex, 1000)
 
+
+// Header fixed
 var getHeaderElement = document.querySelector("#header")
+var headerFixed = document.querySelector(".fixed-header")
 
 function performHeader() {
     document.onscroll = function() {
@@ -33,6 +36,7 @@ function performHeader() {
         if (scrollHeight > 400) {
             getHeaderElement.style.position = "fixed"
             getHeaderElement.style.zIndex = "3"
+            getHeaderElement.style.transition = "all 0.3s"
         } else if (scrollHeight < 400) {
             getHeaderElement.style.position = "unset"
         }
@@ -40,3 +44,4 @@ function performHeader() {
 }
 
 performHeader()
+
