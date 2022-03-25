@@ -115,15 +115,18 @@
                                 <div class="form-group">
                                     <label for="firstname">First Name</label>
                                     <input type="text" class="form-control">
+                                    <div id="statusOfFirstName"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastname">Last Name</label>
                                     <input type="text" class="form-control">
+                                    <div id="statusOfLastName">sadasdas</div>
                                 </div>
                                 <div class="form-group form-group-country">
                                     <label for="country">State / Country</label>
                                     <div class="select-wrap">
                                         <select name="" id="" class="form-control">
+                                            <option value="">(Choose your country)</option>
                                             <option value="">VietNam</option>
                                             <option value="">France</option>
                                             <option value="">Spain</option>
@@ -132,30 +135,37 @@
                                             <option value="">Japan</option>
                                         </select>
                                     </div>
+                                    <div id="statusOfCountry"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname">Street Address</label>
-                                    <input type="text" class="form-control">
+                                    <label for="form-control">Street Address</label>
+                                    <input type="text" class="form-control" placeholder="House number and street name">
+                                    <div id="statusOfAddress"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname"></label>
-                                    <input type="text" class="form-control">
+                                    <label for="form-control">Appartment</label>
+                                    <input type="text" class="form-control" placeholder="Appartment, suite etc">
+                                    <div id="statusOfAppartment"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname">Town / City</label>
+                                    <label for="form-control">Town / City</label>
                                     <input type="text" class="form-control">
+                                    <div id="statusOfCity"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname">Postcode / ZIP *</label>
+                                    <label for="form-control">Postcode / ZIP *</label>
                                     <input type="text" class="form-control">
+                                    <div id="statusOfPostcode"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname">Phone</label>
+                                    <label for="form-control">Phone</label>
                                     <input type="text" class="form-control">
+                                    <div id="statusOfPhonenumber"></div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname">Email Address</label>
+                                    <label for="form-control">Email Address</label>
                                     <input type="text" class="form-control">
+                                    <div id="statusOfEmail"></div>
                                 </div>
                                 <div class="radio">
                                     <label for="">
@@ -203,21 +213,21 @@
                                 <div class="form-group-radio">
                                     <div class="radio">
                                         <label for="">
-                                            <input type="radio"> Direct Bank Tranfer
+                                            <input type="radio" name="payment-method"> Direct Bank Tranfer
                                         </label>
                                     </div>
                                 </div>
                                 <div class="form-group-radio">
                                     <div class="radio">
                                         <label for="">
-                                            <input type="radio"> Check Payment
+                                            <input type="radio"  name="payment-method"> Check Payment
                                         </label>
                                     </div>
                                 </div>
                                 <div class="form-group-radio">
                                     <div class="radio">
                                         <label for="">
-                                            <input type="radio"> Paypal
+                                            <input type="radio"  name="payment-method"> Paypal
                                         </label>
                                     </div>
                                 </div>
@@ -391,5 +401,6 @@
 
     <script src="./js/wishlist.js"></script>
     <script src="js/checkEmail.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 </html>s
