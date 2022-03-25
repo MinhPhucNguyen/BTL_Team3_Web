@@ -15,6 +15,7 @@ function checkEmail() {
     }
 }
 
-getSubmitElement.addEventListener("click", function () {
+getSubmitElement.addEventListener("click", function (e) {
+    e.preventDefault()
     checkEmail()
 })

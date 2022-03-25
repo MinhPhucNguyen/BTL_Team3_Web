@@ -339,11 +339,11 @@ body{
     font-size: 16px;
     background-color: var(--primery-color);
     color: #fff;
-    padding: 18px 40px;
+    padding: 18px 56px;
     border: none;
     border-radius: 20px;
     transition: all 0.2s linear;
-    margin-top: 100px;
+    margin: 10px 0 0 1px;
 }
 
 .row-2 .col-2 .login-form button:hover {
@@ -355,6 +355,10 @@ body{
 
 .row-2 .col-2 .login-form input:last-child {
     padding: 60px 266px 60px 20px;
+}
+
+textarea {
+    width: 185px;
 }
 
 /* Start: Footer */
