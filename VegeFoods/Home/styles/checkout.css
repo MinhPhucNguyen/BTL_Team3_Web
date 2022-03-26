@@ -313,7 +313,7 @@ body{
 }
 
 .form-group-country{
-    width: 96.05%;
+    width: 96.30%;
     margin-right: unset;
 }
 
@@ -335,9 +335,9 @@ body{
     height: 58px;
     padding: 0 15px;
     margin-bottom: 16px;
-    outline: none;
     border: 1px solid var(--lightgray-color);
     font-size: 16px;
+    outline-color: #82ae46;
 }
 
 .w-100{

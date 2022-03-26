@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cart</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -114,38 +114,37 @@
                             <div class="all-form-input">
                                 <div class="form-group">
                                     <label for="firstname">First Name</label>
-                                    <input type="text" class="form-control">
-                                    <div id="statusOfFirstName"></div>
+                                    <input type="text" class="form-control" id="txtFirstname">
+                                    <div id="statusOfFirstname"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control">
-                                    <div id="statusOfLastName">sadasdas</div>
+                                    <input type="text" class="form-control" id="txtLastname">
+                                    <div id="statusOfLastname"></div>
                                 </div>
                                 <div class="form-group form-group-country">
                                     <label for="country">State / Country</label>
                                     <div class="select-wrap">
-                                        <select name="" id="" class="form-control">
-                                            <option value="">(Choose your country)</option>
-                                            <option value="">VietNam</option>
-                                            <option value="">France</option>
-                                            <option value="">Spain</option>
-                                            <option value="">Tokyo</option>
-                                            <option value="">Italia</option>
-                                            <option value="">Japan</option>
+                                        <select name="" id="txtCountry" class="form-control" required> 
+                                            <option value="1">(Choose your country)</option>
+                                            <option value="2">VietNam</option>
+                                            <option value="3">France</option>
+                                            <option value="4">Spain</option>
+                                            <option value="5">Tokyo</option>
+                                            <option value="6">Italia</option>
+                                            <option value="7">Japan</option>
                                         </select>
+                                        <div id="statusOfCountry"></div>
                                     </div>
-                                    <div id="statusOfCountry"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="form-control">Street Address</label>
-                                    <input type="text" class="form-control" placeholder="House number and street name">
+                                    <input type="text" class="form-control" id="txtAddress" placeholder="House number and street name" >
                                     <div id="statusOfAddress"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="form-control">Appartment</label>
-                                    <input type="text" class="form-control" placeholder="Appartment, suite etc">
-                                    <div id="statusOfAppartment"></div>
+                                    <input type="text" class="form-control" placeholder="Appartment, suite etc: (optional)">
                                 </div>
                                 <div class="form-group">
                                     <label for="form-control">Town / City</label>
@@ -154,17 +153,17 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="form-control">Postcode / ZIP *</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" id="txtPostcode">
                                     <div id="statusOfPostcode"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="form-control">Phone</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" id="txtPhoneNumber" >
                                     <div id="statusOfPhonenumber"></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="form-control">Email Address</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" id="txtEmail">
                                     <div id="statusOfEmail"></div>
                                 </div>
                                 <div class="radio">
