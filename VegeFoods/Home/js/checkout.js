@@ -122,21 +122,21 @@ phoneNumber.addEventListener("focusout", function(e) {
 })
 
 //Check email
-var statusOfEmail = document.querySelector("#statusOfEmail")
-var email = document.querySelector("#txtEmail") 
-function checkEmail() {
+var statusOfEmailaddress = document.querySelector("#statusOfEmailaddress")
+var email = document.querySelector("#txtEmailaddress") 
+function checkEmailaddress() {
     var emailRegex = /[A-Z0-9._%+-]+@gmail\.com/igm;
     if(emailRegex.test(email.value)){
-        statusOfEmail.textContent = "*Valid"
-        statusOfEmail.style.color = "#82AE46"
+        statusOfEmailaddress.textContent = "*Valid"
+        statusOfEmailaddress.style.color = "#82AE46"
     }
     else{
-        statusOfEmail.textContent = "*Invalid"
-        statusOfEmail.style.color = "red"
+        statusOfEmailaddress.textContent = "*Invalid"
+        statusOfEmailaddress.style.color = "red"
     }
 }
 
 email.addEventListener("focusout", function(e) {
     e.preventDefault()
-    checkEmail()
+    checkEmailaddress()
 })
