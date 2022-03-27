@@ -25,7 +25,7 @@ listCounterup.forEach(function(item) {
 var circle = document.querySelectorAll('.circle')
 circle.forEach(function(item) {
     item.addEventListener('click', function() {
-
+        
     })
 })
 

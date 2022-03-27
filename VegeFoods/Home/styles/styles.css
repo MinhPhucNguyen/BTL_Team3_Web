@@ -1219,3 +1219,7 @@ hr{
 }
 /* End: Footer */
 
+/* Sửa slider */
+.slider-item-2 {
+    display: block;
+}
