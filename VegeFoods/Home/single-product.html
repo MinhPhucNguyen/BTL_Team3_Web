@@ -167,13 +167,13 @@
                             </div>
                             <div class="input__form">
                                 <div class="input__form-btn">
-                                    <button type="button" class="quantity-left mr-8" data-type="fa-minus" data-field>
+                                    <button type="button" onclick="decreaseNumber()" class="quantity-left mr-8" data-type="fa-minus">
                                         <i class="fa-solid fa-minus"></i>
                                     </button>
                                 </div>
-                                <input type="text" id="quantity" class="input-number" value="1">
+                                <input type="text" id="quantity" min="1" max="100" class="input-number" value="1">
                                 <div class="input__form-btn">
-                                    <button type="button" class="quantity-right ml-8" data-type="fa-plus" data-field>
+                                    <button type="button" onclick="increaseNumber()" class="quantity-right ml-8" data-type="fa-plus">
                                         <i class="fa-solid fa-plus"></i>
                                     </button>
                                 </div>
@@ -496,5 +496,6 @@
     <!-- End:Wrapper -->
     <script src="./js/checkEmail.js"></script>
     <script src="js/checkEmail.js"></script>
+    <script src="js/single-product.js"></script>
 </body>
 </html>
