@@ -25,20 +25,6 @@ function DateofIndex() {
 setInterval(DateofIndex, 1000)
 
 
-// Show header
-var headerContainer = document.querySelector(".header__container")
-var mobileMenu = document.querySelector(".menu-btn")
-
-mobileMenu.onclick = function() {
-    var close = headerContainer.clientHeight === 60
-    if(close){
-        headerContainer.style.height = "auto"
-    }
-    else{
-        headerContainer.style.height = "60px"
-    }
-}
-
 
 
 

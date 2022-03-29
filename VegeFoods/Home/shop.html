@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lora:ital@1&family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/shop.css">
+    <link rel="stylesheet" href="./responsive/responsive.css">
 </head>
 <body>
     <!-- Start:Wrapper -->
@@ -48,8 +49,11 @@
                     <div class="header__logo">
                         <a href="index.html">Vegefoods</a>
                     </div>
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars menu-icon"></i><span>Menu</span>
+                    </div>
                     <div class="header__nav">
-                        <ul class="header__nav--list">
+                        <ul class="header__nav--list">     
                             <li class="header__nav--item">
                                 <a href="index.html" class="header__nav--link">HOME</a>
                             </li>
@@ -568,7 +572,7 @@
                                 <input type="submit" value="Subscribe" class="Submit">
                             </div>
                         </form>
-                        <div id="statusOfEmali"></div>
+                        <div id="statusOfEmail"></div>
                     </div>
                 </div>
             </div>
@@ -703,6 +707,7 @@
     <!-- End:Wrapper -->
 
     <script src="./js/checkEmail.js"></script>
+    <script src="js/clickOpenMenu.js"></script>
     <script src="js/checkEmail.js"></script>
     <script src="js/headerScroll.js"></script>
 </body>

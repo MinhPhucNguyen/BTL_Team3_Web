@@ -49,7 +49,6 @@ body{
 /* Start: Header */
 #header{
     width: 100%;
-    transform: translate3d();
     transition: .3s all ease-out;
 }
 
@@ -136,16 +135,6 @@ body{
     color: black;
 }
 
-.menu-btn{
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 1.8;
-}
-
-.menu-icon{
-    margin-right: 6px;
-}
-
 .header__nav{
     width: 100%;
     height: 100%;
@@ -211,7 +200,7 @@ body{
     content: "";
     display: block;
     width: 100%;
-    height: 10px;
+    height: 15px;
     position: absolute;
     top: -6px;
     left: 0;
@@ -238,16 +227,6 @@ body{
 .shop__sub--item a{
     font-size: 14px;
     color: var(--text-color);
-}
-
-@keyframes fadeIn {
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
 }
 
 /* End: header */
