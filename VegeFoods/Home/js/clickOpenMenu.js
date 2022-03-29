@@ -1,11 +1,10 @@
 // Show header
 var headerContainer = document.querySelector(".header__container")
 var mobileMenu = document.querySelector(".menu-btn")
-var headerNavItem = document.querySelector(".header__nav--item")
 
 mobileMenu.onclick = function() {
-    var close = headerContainer.clientHeight === 60
-    if(close){
+    var close = headerContainer.clientHeight 
+    if(close === 60){
         headerContainer.style.height = "auto"
     }
     else{
