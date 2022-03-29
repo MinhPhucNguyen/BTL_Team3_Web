@@ -1,0 +1,126 @@
+/* PC */
+@media (min-width: 1024px){
+   .menu-btn{
+       display: none;
+   }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    #header{
+        max-width: 100%;
+    }
+
+    .header__sub--contacts .header__sub--inner{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header__container{
+        max-width: 100%;
+    }
+
+    .header__sub--numbers,
+    .header__sub--email,
+    .header__sub--delivery{
+        padding-right: unset;
+    }
+
+    .header__inner{
+        width: 100%;
+        padding: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header__nav{
+        display: unset;
+        max-width: 100%;
+    }
+
+    .header__nav .header__nav--list{
+        /* display: initial; */
+        display: none;
+    }
+
+    .header__nav--list .header__nav--item{
+        position: relative;
+        padding: 20px 0;
+    }
+
+    .header__nav--item .fa-sort-down{
+        right: 93%;
+        top: 34%;
+    }
+
+    .header__nav--link{
+        width: 100%;
+    }
+
+    .shop__sub--menu{
+        width: 100%;
+        text-align: center;
+    }
+
+    .shop__sub--item{
+        box-shadow: 0 1px 2px #e0e0e0;
+        line-height: 1.8;
+    }
+
+    .shop__sub--item a{
+        display: block;
+    }
+
+    #vegetypes,
+    .section{
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .vegetypes__container,
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .text-center img{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .product__row--list{
+        max-width: 100%;
+    }
+
+    .product__inner{
+        max-width: 46%;
+        justify-content: space-between;
+    }
+
+    .deal-timer{
+        width: 90%;
+        display: block;
+    }
+
+    .time{
+        padding-right: 0;
+        margin-left: 0;
+    }
+    
+    #deal__timer .time #days,
+    #deal__timer .time #hours,
+    #deal__timer .time #minutes,
+    #deal__timer .time #second{
+        font-size: 30px;
+        color: black;
+    }
+
+    .partner__logo .partner{
+        object-fit: cover;
+    }
+}
+
+/* Mobile */
+@media (max-width: 740px){
+
+}

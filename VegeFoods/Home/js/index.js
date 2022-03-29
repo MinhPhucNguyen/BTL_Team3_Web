@@ -25,23 +25,20 @@ function DateofIndex() {
 setInterval(DateofIndex, 1000)
 
 
-// Header fixed
-var getHeaderElement = document.querySelector("#header")
+// Show header
+var headerContainer = document.querySelector(".header__container")
+var mobileMenu = document.querySelector(".menu-btn")
 
-function performHeader() {
-    document.onscroll = function() {
-        const scrollHeight = window.scrollY
-
-        if (scrollHeight > 400) {
-            getHeaderElement.style.position = "fixed"
-            getHeaderElement.style.zIndex = "3"
-            getHeaderElement.style.transition = "all 0.3s"
-        } 
-        else if (scrollHeight < 400) {
-            getHeaderElement.style.position = "unset"
-        }
+mobileMenu.onclick = function() {
+    var close = headerContainer.clientHeight === 60
+    if(close){
+        headerContainer.style.height = "auto"
+    }
+    else{
+        headerContainer.style.height = "60px"
     }
 }
 
-performHeader()
+
+
 

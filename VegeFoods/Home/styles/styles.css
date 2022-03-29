@@ -69,6 +69,7 @@ body{
     justify-content: space-around;
     flex-grow: 1;
     padding: 0 15px;
+    max-width: 100%;
 }
 
 .header__sub--icon i{
@@ -133,6 +134,16 @@ body{
 
 .header__inner .header__logo a:hover{
     color: black;
+}
+
+.menu-btn{
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.menu-icon{
+    margin-right: 6px;
 }
 
 .header__nav{
@@ -229,21 +240,15 @@ body{
     color: var(--text-color);
 }
 
-/* Start: Fix-Header */
-/* .fixed-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--white-text);
-    box-shadow: var(--light-shadow);
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
-
-.fix-header .header__nav--list a{
-    color: #000000;
-} */
-
-/* End: Fix-Header */
 
 /* End: header */
 
@@ -789,7 +794,6 @@ body{
     display: flex;
     width: 80%;
     margin-top: 3rem;
-    
 }
 
 #deal__timer .time #days,
