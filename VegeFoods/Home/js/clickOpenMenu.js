@@ -14,9 +14,9 @@ mobileMenu.onclick = function() {
     }
 }
 
-var headerResponsive = document.querySelector(".header__nav--item.dropdown")
+var headerResponsive = document.querySelector(".dropdown")
 var subMenu = document.querySelector(".shop__sub--menu")
 
-headerResponsive.onclick = function() {
-    subMenu.classList.toggle("shop__sub--menu")
-}
+// headerResponsive.onclick = function() {
+//     subMenu.classList.toggle("shop__sub--menu")
+// }
