@@ -537,6 +537,7 @@ body{
 }
 
 .product__text h3 a{
+    color: black;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;

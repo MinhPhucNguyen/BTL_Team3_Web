@@ -24,6 +24,14 @@ function DateofIndex() {
 
 setInterval(DateofIndex, 1000)
 
+// Change Slider
+
+var sliderOne = document.querySelector(".slider__item")
+var sliderTwo = document.querySelector(".slider__item-2")
+
+setInterval(function changeSlider() {
+    sliderOne.classList.toggle("active")
+},2000)
 
 
 

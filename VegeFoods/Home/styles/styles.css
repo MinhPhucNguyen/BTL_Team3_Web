@@ -233,13 +233,26 @@ body{
 #slider{
     width: 100%;
     height: 650px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 }
+
 
 .slider__item{
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.slider__item-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .slider__item img{
@@ -314,6 +327,10 @@ body{
     background: transparent;
     color: var(--primery-color);
     box-shadow: 0px 1px 2px rgba(211, 210, 210, 0.3);
+}
+
+.active{
+    display: none;
 }
 
 /* End: Slider */

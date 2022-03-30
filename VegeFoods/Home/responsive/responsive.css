@@ -242,7 +242,7 @@
     }
 
     .header__nav--item .fa-sort-down{
-        right: 330px;
+        right: 86%;
         top: 36%;
     }
 
@@ -562,6 +562,15 @@
     .video{
         width: 100%;
         height: 380px;
+    }
+
+    .Cart-Totals{
+        display: unset;
+    }
+
+    .cart-wrap{
+        width: 100%;
+        padding: 0;
     }
 
 }
