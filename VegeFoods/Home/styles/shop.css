@@ -375,6 +375,7 @@ body{
 }
 
 .product__text h3 a{
+    color: black;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
@@ -457,6 +458,7 @@ body{
 }
 
 .number__inner ul li a{
+    color: black;
     font-size: 16px;
     display: inline-block;
     text-align: center;
@@ -507,7 +509,6 @@ body{
 }
 
 .Email__form{
-    display: flex;
     align-items: center;
     flex-wrap: wrap;
 }

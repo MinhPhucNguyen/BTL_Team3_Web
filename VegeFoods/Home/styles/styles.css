@@ -784,10 +784,14 @@ body{
     color: gray;
     display: inline-block;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .deal__price a{
+    font-size: 20px;
     color: var(--primery-color);
+    padding-left: 10px;
 }
 
 #deal__timer{

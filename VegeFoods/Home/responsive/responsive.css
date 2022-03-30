@@ -152,10 +152,16 @@
         padding: 12px 48px;
     }
 
+    .video{
+        width: 100%;
+        height: 380px;
+    }
+
 }
 
 /* Mobile */
 @media (max-width: 740px){
+    /* Start: Header */
     .header__sub--contacts{
         width: 100%;
     }
@@ -238,6 +244,8 @@
     .header__nav--item .header__nav--link,a{
         font-size: 11px;
         color: white;
+        display: block;
+        text-align: center;
     }
 
     .shop__sub--menu{
@@ -250,6 +258,37 @@
         line-height: 1.5;
     }
 
+    .shop__sub--menu .shop__sub--item{
+        padding: 10px 0;
+    }
+
+    /* End: Header */
+
+    /* Start: slider */
+    .slider__inner{
+        width: 100%;
+        margin: 0;
+    }
+
+    .slider__text{
+        padding: 0;
+    }
+
+    .slider__text .slider__heading{
+        font-size: 40px;
+    }
+
+    .slider__sub--heading{
+        padding: 0 15px;
+    }
+
+    .slider__text .slider__subheading a,
+    .slider__text .slider__subheading{
+        display: inline-block;
+    }
+    /* End: slider */
+
+    /* Start: Media */
     .container{
         display: block;
         width: calc(100% - 30px);
@@ -260,6 +299,9 @@
         margin-bottom: 24px;
     }
 
+    /* End: Media */
+
+    /* Start: Vegetypes */
     #vegetypes{
         display: inline-block;
     }
@@ -292,6 +334,7 @@
     .text__sub p .shopnow__btn{
         padding: 12px 24px;
     }
+    /* End: Vegetypes */
 
     /* Start: OurProduct */
     .customer__heading h2,
@@ -309,6 +352,7 @@
 
     /* End: OurProduct */
 
+    /* Start: Deal */
     .deal{
         justify-content: flex-start;
     }
@@ -320,6 +364,10 @@
 
     .deal-timer{
         width: 50%;
+    }
+
+    .deal__content h2{
+        font-size: 28px;
     }
  
     #deal__timer .time #days,
@@ -333,7 +381,9 @@
     .time{
         padding-right: 0;
     }
+    /* End: Deal */
 
+    /* Start: CustomerSays */
     .customer__heading{
         width: 100%;
         padding: 15px 0;
@@ -347,10 +397,11 @@
         width: 100%;
         margin-right: 0 !important;
     }
+    /*End: CustomerSays */
 
+    /* Start: Partner */
     .partner__logo{
         text-align: center;
-        /* margin-bottom: 50px; */
     }
 
     .partner{
@@ -366,10 +417,16 @@
         width: 80%;
         height: 80px;
     }
+    /* End: Partner */
 
+    /* Start:Email */
     .Email__content{
         flex-wrap: wrap;
         margin: 0;
+    }
+
+    .Email__form{
+        display: unset;
     }
 
     .Email__form,
@@ -380,6 +437,9 @@
     .Email__item{
         margin-bottom: 24px;
     }
+    /* End: Email */
+
+    /* Start: Footer */
 
     .mouse__up-and-down .fa-angle-up{
         font-size: 20px;
@@ -407,5 +467,46 @@
 
     .end{
         margin-top: 58px;
+    }
+
+    .footer__menu .footer__item a{
+        text-align: left;
+    }
+
+    .fa-twitter,
+    .fa-facebook-f,
+    .fa-instagram{
+        color: black;
+    }
+
+    /* End: Footer */
+
+    .text-wrap{
+        width: 100%;
+        padding: 48px 0;
+    }
+
+    .counter-up {
+        color: #82AE46;
+    }
+    
+    .counter {
+        margin: 0;
+        display: unset;
+    }
+
+    .counter .counter-up {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .counter-up span {
+        color: black;
+        font-weight: 600;
+    }
+
+    .video{
+        width: 100%;
+        height: 380px;
     }
 }
