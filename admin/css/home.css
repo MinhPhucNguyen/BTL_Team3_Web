@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    background-color: #567086;
+}
+
+.row {
+    background-color: #567086;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.row-2 {
+    background-color: #4e657a;
+}
+
+ul {
+    height: 80px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    text-align: center;
+    color: #fff;
+}
+
+ul li:hover {
+    color: #ffc107;
+    cursor: pointer;
+}
+
+ul li i {
+    font-size: 22px;
+}
+
+ul li p {
+    margin-bottom: 0;
+}
+
+.col-md-6 {
+    margin-bottom: 0;
+}
+
+.product {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product,
+.register {
+    color: #fff;
+    text-align: center;
+}
+
+.register:hover {
+    color: #ffc107;
+    cursor: pointer;
+}
+
+.menu-btn {
+    color: #fff;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-sm-3 {
+    display: none;
+}
+
+.wrapper {
+    background-color:#435c70;
+}
+
+.categories {
+    background-color: #435c70;
+    height: 650px;
+    overflow: hidden;
+}
+
+.categories h1 {
+    font-size: 20px;
+    color: #fff;
+    margin: 20px 0 20px 40px;
+}
+
+.col-md-4 table {
+    background-color: #567086;
+    width: 80%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 60px;
+    margin: auto;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+}
+
+table td {
+    padding: 0 10px;
+    border-bottom: 1px solid #000;
+}
+
+table td div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #394e64;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: #fff;
+    font-size: 18px;
+    background-color: #ffc107;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    background-color: transparent ;
+    border: 1px solid #ffc107;
+}
