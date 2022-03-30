@@ -49,7 +49,7 @@ body{
 /* Start: Header */
 #header{
     width: 100%;
-    transition: .3s all ease-out;
+    transition: .3s all ease-out; 
 }
 
 .header__sub--contacts{
@@ -97,9 +97,8 @@ body{
 }
 
 .header__container{
-    width: 100%;
+    width: 100%;    
     display: flex;
-    max-height: 100%;
     box-shadow: 0px 3px 10px rgba(211, 210, 210, 0.3);
     z-index: 3;
     background: var(--white-text);
@@ -113,6 +112,7 @@ body{
     margin: auto;
     padding: 0 15px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header__inner .header__logo{
@@ -143,8 +143,6 @@ body{
 
 .header__nav .header__nav--list{
     display: flex;
-    align-items: center;
-    list-style: none;
     margin-left: auto;
 }
 
@@ -429,7 +427,6 @@ body{
 }
 
 .vegetypes_column--center{
-    object-fit: cover;
     padding: 0 15px;
     display: flex;
     width: calc(100% /3 );
@@ -470,6 +467,7 @@ body{
     letter-spacing: unset;
     transition: 0.4s;
     font-weight: 500;
+    animation: glowing 1500ms infinite;
 }
 
 .text__sub p .shopnow__btn:hover{
@@ -478,6 +476,7 @@ body{
 }
 
 .text-center img{
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
@@ -533,6 +532,26 @@ body{
     line-height: 1.5;
 }
 
+@keyframes glowing {
+    0% { 
+        background-color: #82AE46;
+        box-shadow: 0 0 5px #aaa;
+        opacity: 0; 
+        transition: 0.8s;
+        }
+    50% {
+        background-color: #82AE46;
+        box-shadow: 0 0 12px #82AE46;
+        opacity: 1; 
+        }
+    100% {
+        background-color: #82AE46; 
+        box-shadow: 0 0 5px #ccc; 
+        opacity: 1;
+        transition: 0.8s;
+        }
+}
+
 /* End: Vegetypes */
 
 /* Start: OurProduct */
@@ -545,6 +564,7 @@ body{
     width: 100%;
     text-align: center;
     margin-bottom: 16px;
+    line-height: 1.8;
 }
 
 .product__heading .product__sub--heading{
@@ -637,6 +657,7 @@ body{
 }
 
 .product__text h3 a{
+    color: black;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
@@ -763,10 +784,14 @@ body{
     color: gray;
     display: inline-block;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .deal__price a{
+    font-size: 20px;
     color: var(--primery-color);
+    padding-left: 10px;
 }
 
 #deal__timer{
@@ -948,9 +973,11 @@ hr{
     padding: 0 20px;
 }
 
-.partner img{
+.partner__logo .partner img{
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 /* End: Partner */
 
@@ -1148,6 +1175,7 @@ hr{
 .fa-twitter,
 .fa-facebook-f,
 .fa-instagram{
+    color: #000000;
     position: absolute;
     font-size: 26px;
     top: 50%;

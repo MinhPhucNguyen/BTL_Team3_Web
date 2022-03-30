@@ -298,6 +298,7 @@ body{
 .rating-stars .number-rating{
     font-size: 18px;
     margin-right: 5px;
+    color: #000000;
 }
 
 .rating .sold a span,

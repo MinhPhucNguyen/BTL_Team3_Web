@@ -146,8 +146,6 @@ body{
 
 .header__nav .header__nav--list{
     display: flex;
-    align-items: center;
-    list-style: none;
     margin-left: auto;
 }
 
@@ -284,14 +282,19 @@ body{
     background-color: #f7f6f2;
 }
 
-.vid{
-    width: 50%;
+.video {
+    display: block;
+    width: calc(75% / 2);
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .text-wrap{
     width: 50%;
     padding: 48px 15px 48px 45px;
- 
     line-height: 1.5;
 }
 
@@ -300,7 +303,6 @@ body{
     font-weight: 600;
     margin-bottom: 24px;
 }
-
 
 .text-wrap .para-2,
 .text-wrap .para-1{
@@ -367,7 +369,6 @@ body{
 }
 
 .Email__form{
-    display: flex;
     align-items: center;
 }
 
@@ -429,7 +430,7 @@ body{
     height: 100%;
     object-fit: cover;
     object-position: center;
-    z-index: 0;
+    z-index: -2;
 }
 
 .overlay{
@@ -440,22 +441,23 @@ body{
     bottom: 0;
     background: #fff;
     opacity: 0.3;
+    z-index: -1;
 }
 
 .counter {
     margin: auto;
     display: flex;
-    z-index: 1;
 }
 
 .counter .counter-up {
     text-align: center;
     padding: 20px;
-}
-
-.counter-up {
     margin: 0 50px;
 }
+
+ .counter-up .number{
+     z-index: 3;
+ }
 
 .content .counter-up:first-child {
     padding: 0 100px;
@@ -470,6 +472,7 @@ body{
     color: rgba(0,0,0,.7);    
     opacity: 0.8;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .awards span,
@@ -622,14 +625,6 @@ body{
 /* End: CustomerSays */
 
 /* Start: Media*/
-.container{
-    width: 75%;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .media__item{
     width: calc(100% / 4);
