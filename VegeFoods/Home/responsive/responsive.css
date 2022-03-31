@@ -158,7 +158,6 @@
     .text-wrap p a{
         display: inline-block;
         margin-top: 20px;
-        padding: 12px 48px;
     }
 
     .video{
@@ -571,6 +570,138 @@
     .cart-wrap{
         width: 100%;
         padding: 0;
+    }
+
+    .bill-inner{
+        display: unset;
+    }
+
+    .bill-details{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .form-group{
+        width: 100%;
+    }
+
+    .radio{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+    }
+    
+    .radio label{
+        padding-bottom: 20px;
+    }
+
+    .cart-text p a{
+        font-size: 18px;
+    }
+
+    /* Start: Blog */
+    .container .row{
+        display: unset;
+    }
+
+    .desciption{
+        display: unset;
+    }
+    
+    .desciption .text-wrap{
+        max-width: 100%;
+        margin-left: 0;
+
+    }
+
+    .container .row .col-2,
+    .container .row .col-1{
+        width: 100%;
+    }
+
+    .desciption .image-wrap{
+        margin-left: 0;
+        padding-top: 48px;
+    }
+
+    .desciption .image-wrap img{
+        width: 100%;
+    }
+
+    .container{
+        padding: 0 15px;
+    }
+
+    .desciption .text-wrap button{
+        font-size: 18px;
+        padding: 14px 48px;
+    }
+
+    .involve{
+        width: 100%;
+        padding: 0;
+    }
+
+    .involve .input-wrap{
+        margin-left: 0;
+        width: calc(100% - 2px);
+    }
+
+    .image-wrap-2{
+        padding-right: 20px;
+    }
+
+    .section .container{
+        margin: 0;
+    }
+
+    /* Start: Contact */
+    .container-wrap{
+        width: calc(100% - 30px);
+    }
+    .container-wrap .row-1{
+        display: unset;
+    }
+
+    .container-contact .contact{
+        width: calc(100% - 8px);
+        display: inline-block;
+        padding: 20px 4px;
+    }
+
+    .container-contact .contact:first-child{
+        margin-right: 0;
+    }
+
+    .container-contact .contact:nth-child(2),
+    .container-contact .contact:nth-child(3),
+    .container-contact .contact:last-child{
+        margin: 0;
+    }
+    
+    .row-2 {
+        max-width: 100%;
+        flex-direction:column-reverse;
+    }
+
+    .row-2 .col-2{
+        width: calc(100% - 96px);
+        margin: 0;
+        padding: 48px ;
+        height: 50%;
+    }
+
+    .row-2 .col-1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-map iframe{
+        height: 400px;
+    }
+
+    #formTextarea{
+        height: 100px;
     }
 
 }
