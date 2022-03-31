@@ -86,23 +86,11 @@ nav .logo-name {
     align-items: center;
 }
 
-nav .logo-image {
-    display: flex;
-    justify-content: center;
-    min-width: 45px;
-}
-
-nav .logo-image img {
-    width: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 nav .logo-name .logo_name {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
     color: #82ae46;
-    margin-left: 14px;
+    margin-left: 20px;
     transition: var(--tran-05);
 }
 
@@ -112,7 +100,7 @@ nav.close .logo_name {
 }
 
 nav .menu-items {
-    margin-top: 40px;
+    margin-top: 20px;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
