@@ -15,6 +15,7 @@ html {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -39,7 +40,7 @@ html {
     padding: 32px 24px;
     text-align: center;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 18px;
     margin: 24px;
     align-self: center;
     box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
@@ -48,6 +49,8 @@ html {
 .form .heading {
     font-size: 2rem;
     text-transform: uppercase;
+    color: #82AE46;
+    letter-spacing: 2px;
 }
 
 .form .desc {
@@ -105,7 +108,7 @@ html {
 .form-submit {
     height: 40px;
     width: 100%;
-    background-color: #1dbfaf;
+    background-color: #82AE46;
     border: 1px solid #b3b3b3;
     border-radius: 8px;
     margin-top: 12px;
@@ -116,7 +119,7 @@ html {
 }
 
 .form-submit:hover {
-    background-color: #1ac7b6;
+    background-color: #78d6cd;
 }
 
 .spacer {
