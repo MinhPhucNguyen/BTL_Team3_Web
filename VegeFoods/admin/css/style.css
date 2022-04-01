@@ -135,7 +135,7 @@ body.dark li a:hover:before {
 }
 
 .menu-items li a i {
-    font-size: 24px;
+    font-size: 20px;
     min-width: 45px;
     height: 100%;
     display: flex;
