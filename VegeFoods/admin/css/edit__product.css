@@ -388,6 +388,7 @@ input{
 
 textarea{
     resize: none;
+    height: 100px;
     border: 2px solid var(--toggle-color);
     border-radius: 5px;
     padding: 10px;
