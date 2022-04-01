@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -87,7 +86,7 @@ nav .logo-name {
     align-items: center;
 }
 
-nav .logo-name a{
+nav .logo-name a {
     text-decoration: none;
 }
 
@@ -245,6 +244,12 @@ nav.close~.dashboard {
     background-color: var(--panel-color);
     transition: var(--tran-05);
     z-index: 10;
+}
+
+.dashboard .top .fa-bars {
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 nav.close~.dashboard .top {
