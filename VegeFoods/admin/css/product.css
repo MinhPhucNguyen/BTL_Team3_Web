@@ -90,6 +90,10 @@ nav .logo-name {
     align-items: center;
 }
 
+nav .logo-name a{
+    text-decoration: none;
+}
+
 nav .logo-name .logo_name {
     font-size: 30px;
     font-weight: 600;
@@ -364,6 +368,13 @@ nav.close~.dashboard .top {
 
 table {
     width: 70%;
+    border: 1px solid var(--toggle-color);
+    border-radius: 5px;
+}
+
+thead {
+    border-color: #3A3B3C;
+    background-color: #82ae46;
 }
 
 .tr1 {
@@ -371,10 +382,19 @@ table {
 }
 
 .tr1 th {
+    color: var(--title-icon-color);
     padding: 0 20px;
     height: 50px;
     font-size: 18px;
     font-weight: 900;
+}
+
+.tr1 th:first-child{
+    border-top-left-radius: 5px;
+}
+
+.tr1 th:last-child{
+    border-top-right-radius: 5px;
 }
 
 .tr-similar {
@@ -386,7 +406,9 @@ table {
 }
 
 .delete i{
+    color: #000;
     font-size: 26px;
+    transition: 0.3s;
 }
 
 .delete i:hover {
@@ -404,6 +426,7 @@ a {
 
 .button-wrap {
     width: calc(100% - 70%);
+    margin-left: 20px
 }
 
 .button-add .button-add-inner{
@@ -418,6 +441,7 @@ a {
     background-color: bisque;
     border-radius: 10px;
     padding: 20px;
+    transition: 0.5s;
 }
 
 .button-add:hover {
@@ -442,6 +466,7 @@ a {
     justify-content: center;
     align-items: center;
     line-height: 2;
+    color: #000;
 }
 
 .button-delete{
@@ -450,17 +475,16 @@ a {
     border-radius: 10px;
     padding: 20px;
     margin-top: 30px;
+    transition: 0.5s;
 }
 
 .button-delete i {
     font-size: 30px;
-    color: #000;
     margin-right: 20px;
 }
 
 .button-delete p {
     font-size: 20px;
-    color: #000;
     font-weight: 600;
 }
 

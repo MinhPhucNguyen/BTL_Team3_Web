@@ -10,6 +10,10 @@ html {
     font-family: sans-serif;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .app {
     background: #f1f1f1;
     height: 100vh;
@@ -47,10 +51,11 @@ html {
 }
 
 .form .heading {
-    font-size: 2rem;
+    font-size: 28px;
     text-transform: uppercase;
     color: #82AE46;
     letter-spacing: 2px;
+    font-weight: 700;
 }
 
 .form .desc {
@@ -76,10 +81,10 @@ html {
 }
 
 .form-label {
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 6px;
     line-height: 1.8rem;
-    font-size: 1.4rem;
+    font-size: 18px;
 }
 
 .form-control {
@@ -109,13 +114,14 @@ html {
     height: 40px;
     width: 100%;
     background-color: #82AE46;
-    border: 1px solid #b3b3b3;
+    border: none;
     border-radius: 8px;
     margin-top: 12px;
-    font-size: 1.4rem;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .form-submit:hover {

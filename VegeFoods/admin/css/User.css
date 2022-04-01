@@ -85,6 +85,10 @@ nav .logo-name {
     align-items: center;
 }
 
+nav .logo-name a{
+    text-decoration: none;
+}
+
 nav .logo-image img {
     width: 40px;
     object-fit: cover;

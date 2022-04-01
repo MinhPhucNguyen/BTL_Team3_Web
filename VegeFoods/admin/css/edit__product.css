@@ -86,6 +86,10 @@ nav .logo-name {
     align-items: center;
 }
 
+nav .logo-name a{
+    text-decoration: none;
+}
+
 nav .logo-name .logo_name {
     font-size: 30px;
     font-weight: 600;
@@ -345,7 +349,7 @@ nav.close~.dashboard .top {
 }
 
 .return__logo{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 /* Start:Form__input */
@@ -437,3 +441,31 @@ textarea{
 }
 
 /* End: Product__img */
+
+/* Save button */
+.save{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.save-btn{
+    width: 300px;
+    display: inline-block;
+    background: var(--box1-color);
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title-icon-color);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.save-btn:hover{
+    background: blue;
+}
+
+.save-btn span i{
+    margin-right: 10px;
+}
+/* Save button */
+

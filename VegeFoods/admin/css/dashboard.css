@@ -87,6 +87,10 @@ nav .logo-name {
     align-items: center;
 }
 
+nav .logo-name a{
+    text-decoration: none;
+}
+
 nav .logo-name .logo_name {
     font-size: 30px;
     font-weight: 600;
