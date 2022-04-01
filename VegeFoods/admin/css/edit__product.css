@@ -510,11 +510,50 @@ textarea {
 }
 
 .modal-container {
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 400px;
     background: white;
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .hide {
     display: none;
+}
+
+.modal-close-icon{
+    text-align: right;
+}
+
+.modal-close-icon i{
+    font-size: 38px;
+    padding-right: 13px;
+    padding-top: 4px;
+}
+
+.modal-upload{
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.cloud-icon{
+    font-size: 100px;
+    margin-bottom: 50px;
+    border: 5px dashed black;
+    cursor: pointer;
+}
+
+.upload-btn{
+    background: var(--box1-color);
+    padding: 10px 36px;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.upload-btn:hover{
+    background: var(--box2-color);
+    cursor: pointer;
 }
