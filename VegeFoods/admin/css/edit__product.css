@@ -242,6 +242,12 @@ nav.close~.dashboard {
     z-index: 1;
 }
 
+.dashboard .top .fa-bars {
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
 nav.close~.dashboard .top {
     left: 73px;
     width: calc(100% - 73px);
@@ -328,6 +334,7 @@ nav.close~.dashboard .top {
 
 .return__text,
 .edit-text {
+    color: var(--text-color);
     font-weight: 600;
 }
 
@@ -366,26 +373,17 @@ nav.close~.dashboard .top {
     width: 80%;
 }
 
-<<<<<<< HEAD
 .product__img {
-    padding-right: 240px;
-=======
-.product__img{
     padding-right: 180px;
->>>>>>> 2ba6f71e5c00bc165a9df37c3436cd7444a74b30
 }
 
 .price,
 .promotional-price,
 .product__introduce,
 .product-ID,
-<<<<<<< HEAD
 .product-name {
-    color: var(--text-color);
-=======
-.product-name{
     width: 80%;
->>>>>>> 2ba6f71e5c00bc165a9df37c3436cd7444a74b30
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     margin-top: 5px;
@@ -411,12 +409,10 @@ textarea {
     padding: 10px;
 }
 
-<<<<<<< HEAD
-=======
-.statusOfID{
+.statusOfID {
     float: right;
 }
->>>>>>> 2ba6f71e5c00bc165a9df37c3436cd7444a74b30
+
 
 /* End:Form__input */
 
@@ -489,25 +485,19 @@ textarea {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .save-btn:hover {
-    background: blue;
-=======
-.save-btn:hover{
     background: rgb(76, 118, 134);
     cursor: pointer;
->>>>>>> 2ba6f71e5c00bc165a9df37c3436cd7444a74b30
 }
 
 .save-btn span i {
     margin-right: 10px;
 }
 
-<<<<<<< HEAD
 
 /* Save button */
-=======
-.modal__add-img{
+
+.modal__add-img {
     position: fixed;
     top: 0;
     left: 0;
@@ -519,13 +509,12 @@ textarea {
     align-items: center;
 }
 
-.modal-container{
+.modal-container {
     width: 400px;
     height: 200px;
     background: white;
 }
 
-.hide{
+.hide {
     display: none;
 }
->>>>>>> 2ba6f71e5c00bc165a9df37c3436cd7444a74b30
