@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +25,6 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--primary-color);
 }
 
 body.dark {
@@ -66,16 +64,22 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3A3B3C;
 }
 
+.app {
+    display: flex;
+}
+
+/* Nav */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 18%;
     padding: 10px 14px;
     background-color: var(--panel-color);
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
+    border-right: 1px solid var(--border-color);
 }
 
 nav.close {
@@ -87,11 +91,23 @@ nav .logo-name {
     align-items: center;
 }
 
+nav .logo-image {
+    display: flex;
+    justify-content: center;
+    min-width: 45px;
+}
+
+nav .logo-image img {
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 nav .logo-name .logo_name {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 600;
     color: #82ae46;
-    margin-left: 20px;
+    margin-left: 14px;
     transition: var(--tran-05);
 }
 
@@ -101,7 +117,7 @@ nav.close .logo_name {
 }
 
 nav .menu-items {
-    margin-top: 20px;
+    margin-top: 40px;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
@@ -135,7 +151,7 @@ body.dark li a:hover:before {
 }
 
 .menu-items li a i {
-    font-size: 24px;
+    font-size: 20px;
     min-width: 45px;
     height: 100%;
     display: flex;
@@ -321,182 +337,178 @@ nav.close~.dashboard .top {
     margin-left: 10px;
 }
 
-.dash-content .boxes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+
+
+/* Content */
+
+
+.content {
+    width: 82%;
+    margin-left: 20%;
+    /* background-color: red;
+    height: 100vh; */
 }
 
-.dash-content .boxes .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 12px;
-    width: calc(100% / 4 - 15px);
-    padding: 15px 20px;
-    background-color: var(--box1-color);
-    transition: var(--tran-05);
-}
-
-.boxes .box i {
-    font-size: 35px;
-    color: var(--text-color);
-}
-
-.boxes .box .text {
-    white-space: nowrap;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.boxes .box .number {
-    font-size: 40px;
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-.boxes .box.box2 {
-    background-color: var(--box2-color);
-}
-
-.boxes .box.box3 {
-    background-color: var(--box3-color);
-}
-
-.boxes .box.box4 {
-    background-color: var(--box4-color);
-}
-
-.dash-content .activity .activity-data {
+.header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    padding: 20px;
 }
 
-.activity .activity-data {
-    display: flex;
+.header .avatar img {
+    width: 50px;
+    padding: auto;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-.activity-data .data {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
+.form-control {
+    width: 400px;
+    height: 44px;
+    border: 1px solid #000;
+    margin: auto;
 }
 
-.activity-data .data-title {
+.form-control i {
     font-size: 20px;
-    font-weight: 500;
-    color: var(--text-color);
+    margin-left: 10px;
 }
 
-.activity-data .data .data-list {
+.form-control input {
+    width: 80%;
+    height: 90%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.menu-product {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.menu-product .icon-wrap {
+    width: 50px;
+    padding: auto;
+    padding: 10px 0;
+    background-color: #82ae46;
+    text-align: center;
+}
+
+.menu-product .icon-wrap i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-product p {
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.list-product {
+    margin-top: 50px;
+    display: flex;
+}
+
+table {
+    width: 800px;
+}
+
+.tr1 {
+    text-align: center;
+}
+
+.tr1 th {
+    width: calc(100%/6);
+    height: 50px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 900;
+}
+
+.tr-similar {
+    text-align: center;
+}
+
+.tr-similar td {
+    height: 50px;
+}
+
+.delete i{
+    font-size: 26px;
+}
+
+.delete i:hover {
+    cursor: pointer;
+    color: rgb(197, 20, 20);
+}
+
+tbody {
     margin-top: 20px;
-    white-space: nowrap;
-    color: var(--text-color);
 }
 
-@media (max-width: 1000px) {
-    nav {
-        width: 73px;
-    }
-    nav.close {
-        width: 250px;
-    }
-    nav .logo_name {
-        opacity: 0;
-        pointer-events: none;
-    }
-    nav.close .logo_name {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    nav li a .link-name {
-        opacity: 0;
-        pointer-events: none;
-    }
-    nav.close li a .link-name {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    nav~.dashboard {
-        left: 73px;
-        width: calc(100% - 73px);
-    }
-    nav.close~.dashboard {
-        left: 250px;
-        width: calc(100% - 250px);
-    }
-    nav~.dashboard .top {
-        left: 73px;
-        width: calc(100% - 73px);
-    }
-    nav.close~.dashboard .top {
-        left: 250px;
-        width: calc(100% - 250px);
-    }
-    .activity .activity-data {
-        overflow-X: scroll;
-    }
+a {
+    text-decoration: none;
 }
 
-@media (max-width: 780px) {
-    .dash-content .boxes .box {
-        width: calc(100% / 2 - 15px);
-        margin-top: 15px;
-    }
+.button-wrap {
+    width: calc(100% - 800px);
 }
 
-@media (max-width: 560px) {
-    .dash-content .boxes .box {
-        width: 100%;
-    }
+.button-add {
+    width: 150px;
+    /* height: 60px; */
+    background-color: bisque;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
 }
 
-@media (max-width: 500px) {
-    nav {
-        width: 73px;
-    }
-    nav.close {
-        width: 73px;
-    }
-    nav .logo_name {
-        opacity: 0;
-        pointer-events: none;
-    }
-    nav.close .logo_name {
-        opacity: 0;
-        pointer-events: none;
-    }
-    nav li a .link-name {
-        opacity: 0;
-        pointer-events: none;
-    }
-    nav.close li a .link-name {
-        opacity: 0;
-        pointer-events: none;
-    }
-    nav~.dashboard {
-        left: 73px;
-        width: calc(100% - 73px);
-    }
-    nav.close~.dashboard {
-        left: 73px;
-        width: calc(100% - 73px);
-    }
-    nav~.dashboard .top {
-        left: 73px;
-        width: calc(100% - 73px);
-    }
-    nav.close~.dashboard .top {
-        left: 73px;
-        width: calc(100% - 73px);
-    }
-    .dashboard .top .sidebar-toggle {
-        display: none;
-    }
+.button-add:hover {
+    cursor: pointer;
+    background-color: #f0af64;
+}
+
+.button-add i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.button-add p {
+    font-size: 20px;
+    color: #000;
+}
+
+.button-delete {
+    width: 150px;
+    background-color: rgb(73, 120, 247);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.button-delete i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.button-delete p {
+    font-size: 20px;
+    color: #000;
+}
+
+.button-delete:hover {
+    background-color: rgb(77, 97, 225);
+    cursor: pointer;
 }
