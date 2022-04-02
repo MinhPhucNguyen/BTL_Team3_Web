@@ -3,10 +3,12 @@ var get_Hours = document.querySelector("#hours")
 var get_Minutes = document.querySelector("#minutes")
 var get_Second = document.querySelector("#second")
 var DateCountDowntext = document.querySelectorAll(".time .time__text")
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime()
+
+//Thời gian đếm ngược
+var countDownDate = new Date("2023 00:00:00").getTime()
 
 function DateofIndex() {
-    // Today's date and time
+    //Thời gian hiện tại 
     var now = new Date().getTime()
 
     var distance = countDownDate - now
