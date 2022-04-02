@@ -731,30 +731,30 @@ textarea {
     display: none;
 }
 
-.modal-close-icon{
+.modal-close-icon {
     text-align: right;
 }
 
-.modal-close-icon i{
+.modal-close-icon i {
     font-size: 38px;
     padding-right: 13px;
     padding-top: 4px;
 }
 
-.modal-upload{
+.modal-upload {
     width: 100%;
     padding-top: 50px;
     text-align: center;
 }
 
-.cloud-icon{
+.cloud-icon {
     font-size: 100px;
     margin-bottom: 50px;
     border: 5px dashed black;
     cursor: pointer;
 }
 
-.upload-btn{
+.upload-btn {
     background: var(--box1-color);
     padding: 10px 36px;
     border-radius: 15px;
@@ -763,12 +763,12 @@ textarea {
     transition: 0.4s;
 }
 
-.upload-btn:hover{
+.upload-btn:hover {
     background: var(--box2-color);
     cursor: pointer;
 }
 
-.edit-wrapper{
+.edit-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -781,11 +781,11 @@ textarea {
     z-index: 3;
 }
 
-.wrapper-none{
+.wrapper-none {
     display: none;
 }
 
-.edit__product-container{
+.edit__product-container {
     background: white;
     padding: 20px;
     width: 1000px;
@@ -794,7 +794,7 @@ textarea {
     z-index: 3;
 }
 
-.check__wrap{
+.check__wrap {
     display: flex;
     align-items: center;
 }
@@ -802,12 +802,12 @@ textarea {
 .ID__name-product,
 .input__name-product,
 .input__price-product,
-.input__promotional-price-product{
+.input__promotional-price-product {
     width: 80%;
 }
 
 .edit-wrap {
-    display: flex; 
+    display: flex;
     justify-content: space-around;
 }
 
