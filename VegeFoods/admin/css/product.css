@@ -418,11 +418,6 @@ thead {
     transition: 0.3s;
 }
 
-.delete i:hover {
-    cursor: pointer;
-    color: rgb(197, 20, 20);
-}
-
 tbody {
     margin-top: 20px;
 }
@@ -798,4 +793,19 @@ textarea {
 .input__price-product,
 .input__promotional-price-product{
     width: 80%;
+}
+
+.edit-wrap {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.delete i:hover {
+    cursor: pointer;
+    color: rgb(197, 20, 20);
+}
+
+.edit i:hover {
+    cursor: pointer;
+    color: rgb(197, 20, 20);
 }
