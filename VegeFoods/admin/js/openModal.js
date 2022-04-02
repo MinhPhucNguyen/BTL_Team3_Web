@@ -4,6 +4,7 @@ var openModalBtn = document.querySelector(".add__img-btn")
 var modalContainer = document.querySelector(".modal-container")
 var addImg = document.querySelector(".add__img")
 var closeIconModal = document.querySelector(".modal-close-icon")
+
 function toggleModal() {
     imageModal.classList.toggle("hide")
 }
@@ -25,9 +26,6 @@ imageModal.addEventListener("click", function(e){
         toggleModal()
     }
 })
-
-
-
 // Open Edit Product
 var editWrapper = document.querySelector(".edit-wrapper")
 var editBtn = document.querySelector(".button-add")
@@ -49,6 +47,7 @@ editWrapper.addEventListener("click", function(e) {
         editProductToggle()
     }
 })
+
 
 
 

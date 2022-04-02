@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <link rel="stylesheet" href="../../Home/styles/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/product.css">
@@ -86,7 +85,7 @@
                     <p>List Product</p>
                 </div>
                 <div class="list-product">
-                    <table>
+                    <table class="table">
                         <thead>
                             <tr class="tr1">
                                 <th>ID</th>
@@ -98,7 +97,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="tr2 tr-similar ">
+                            <!-- <tr class="tr2 tr-similar ">
                                 <td>1</td>
                                 <td>Ảnh</td>
                                 <td>Táo</td>
@@ -145,7 +144,7 @@
                                         <i class="fa-solid fa-circle-xmark"></i>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                     <div class="button-wrap">
@@ -215,7 +214,7 @@
                             </div>
                         </div>
                         <div class="promotional-price">
-                            <label for="">Promotional Price:</label>
+                            <label for="">Quantity in stock:</label>
                             <div class="check__wrap">
                                 <input type="text" class="input__promotional-price-product">
                                 <div class="statusOfPromotionalPrice"></div>
@@ -270,6 +269,7 @@
     <script src="js/script.js"></script>
     <script src="js/openModal.js"></script>
     <script src="js/checkInfoProduct.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 
 </html>
