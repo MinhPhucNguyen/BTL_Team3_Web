@@ -376,13 +376,11 @@ nav.close~.dashboard .top {
 }
 
 .table-list{
-    width: 100%;
-    overflow-x: scroll;
+    width: 70%;
 }
 
 table {
     width: 100%;
-    min-width: 1000px;
     border: 1px solid var(--toggle-color);
     border-radius: 5px;
     
@@ -401,7 +399,7 @@ thead {
     color: var(--title-icon-color);
     padding: 0 20px;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
 }
 
@@ -468,9 +466,9 @@ a {
 }
 
 .button-add p {
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
-    font-weight: 600;
+    font-weight: 600;   
 }
 
 .button-delete .button-delete-inner {
@@ -496,7 +494,7 @@ a {
 }
 
 .button-delete p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -505,11 +503,7 @@ a {
     cursor: pointer;
 }
 
-.edit__product-container {
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
-}
+
 
 .product-btn {
     display: flex;
@@ -631,13 +625,15 @@ textarea {
 .product__img {
     color: var(--text-color);
     height: 100%;
+}
+
+.product__img>div{
     text-align: center;
 }
 
-.product__img>p {
+.product__img div p{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 20px;
 }
 
 .add__img {
@@ -655,11 +651,15 @@ textarea {
     font-size: 48px;
 }
 
+.add__img div{
+    display: none;
+}
+
 .add__img-btn {
     background: var(--primary-color);
     padding: 12px 48px;
     color: var(--title-icon-color);
-    font-size: 20;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 10px;
     transition: 0.3s;
@@ -791,6 +791,7 @@ textarea {
     width: 1000px;
     height: 600px;
     border-radius: 15px;
+    margin-top: 10px;
     z-index: 3;
 }
 

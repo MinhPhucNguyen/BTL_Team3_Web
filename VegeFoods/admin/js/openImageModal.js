@@ -26,6 +26,8 @@ imageModal.addEventListener("click", function(e){
         toggleModal()
     }
 })
+
+
 // Open Edit Product
 var editWrapper = document.querySelector(".edit-wrapper")
 var editBtn = document.querySelector(".button-add")
