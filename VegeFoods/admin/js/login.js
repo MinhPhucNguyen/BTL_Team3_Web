@@ -20,8 +20,7 @@ const localPassword = localStorage.getItem('password')
 //     }
 // })
 function changePage() {
-    window.location.assign('http://127.0.0.1:5500/contact.html')
-}
+   location.href = 'http://127.0.0.1:5500/dashboard.html'
 // changePage()
 
 // formID.onsubmit = function() {
