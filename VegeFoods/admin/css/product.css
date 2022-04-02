@@ -25,6 +25,7 @@
 
 body {
     min-height: 100vh;
+    background-color: var(--primary-color);
 }
 
 body.dark {
@@ -63,14 +64,6 @@ body.dark::-webkit-scrollbar-thumb:hover,
 body.dark .activity-data::-webkit-scrollbar-thumb:hover {
     background: #3A3B3C;
 }
-
-
-/* .app {
-    display: flex;
-} */
-
-
-/* Nav */
 
 nav {
     position: fixed;
@@ -111,7 +104,7 @@ nav.close .logo_name {
 }
 
 nav .menu-items {
-    margin-top: 40px;
+    margin-top: 20px;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;
@@ -240,8 +233,11 @@ nav.close~.dashboard {
 }
 
 .dashboard .top {
+    position: fixed;
+    top: 0;
+    left: 250px;
     display: flex;
-    width: 100%;
+    width: calc(100% - 250px);
     justify-content: space-between;
     align-items: center;
     padding: 10px 14px;
@@ -250,12 +246,18 @@ nav.close~.dashboard {
     z-index: 1;
 }
 
+.dashboard .top .fa-bars {
+    font-size: 26px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
 nav.close~.dashboard .top {
     left: 73px;
     width: calc(100% - 73px);
 }
 
-.dashboard .top .fa-bars {
+.dashboard .top .sidebar-toggle {
     font-size: 26px;
     color: var(--text-color);
     cursor: pointer;
@@ -286,11 +288,11 @@ nav.close~.dashboard .top {
 .top .search-box i {
     position: absolute;
     left: 15px;
-    font-size: 20px;
+    font-size: 22px;
+    z-index: 10;
     top: 50%;
     transform: translateY(-50%);
     color: var(--black-light-color);
-    z-index: 1;
 }
 
 .top img {
@@ -302,7 +304,7 @@ nav.close~.dashboard .top {
 /* Content */
 
 .content {
-    width: 100%;
+    padding-top: 50px;
 }
 
 .header {
@@ -367,15 +369,23 @@ nav.close~.dashboard .top {
 }
 
 .list-product {
+    width: 100%;
     margin-top: 50px;
     display: flex;
     align-items: center;
 }
 
+.table-list{
+    width: 100%;
+    overflow-x: scroll;
+}
+
 table {
-    width: 70%;
+    width: 100%;
+    min-width: 1000px;
     border: 1px solid var(--toggle-color);
     border-radius: 5px;
+    
 }
 
 thead {
@@ -428,7 +438,7 @@ a {
 
 .button-wrap {
     width: calc(100% - 70%);
-    margin-left: 20px
+    margin-left: 20px;
 }
 
 .button-add .button-add-inner {
@@ -674,7 +684,7 @@ textarea {
 .save-btn {
     width: 300px;
     display: inline-block;
-    background: var(--box1-color);
+    background: var(--primary-color);
     padding: 10px 10px;
     font-size: 20px;
     font-weight: 600;
@@ -685,7 +695,7 @@ textarea {
 }
 
 .save-btn:hover {
-    background: rgb(76, 118, 134);
+    background: var(--box1-color);
     cursor: pointer;
 }
 
@@ -706,7 +716,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 4;
 }
 
 .modal-container {
@@ -768,6 +778,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .wrapper-none{
