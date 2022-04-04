@@ -571,12 +571,12 @@ a {
 }
 
 .form__input {
-    padding: 0 60px;
+    padding-left: 60px;
     width: 80%;
 }
 
 .product__img {
-    padding-right: 20px;
+    padding-right: 60px;
 }
 
 .price,
@@ -678,7 +678,7 @@ textarea {
 
 .save {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .save-btn {
@@ -789,7 +789,7 @@ textarea {
     background: white;
     padding: 20px;
     width: 1000px;
-    height: 600px;
+    height: 650px;
     border-radius: 15px;
     margin-top: 10px;
     z-index: 3;
