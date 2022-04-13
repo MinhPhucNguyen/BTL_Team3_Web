@@ -484,7 +484,6 @@ body{
     letter-spacing: unset;
     transition: 0.4s;
     font-weight: 500;
-    animation: glowing 1500ms infinite;
 }
 
 .text__sub p .shopnow__btn:hover{
@@ -547,26 +546,6 @@ body{
     text-decoration: none;
     display: inline-block;
     line-height: 1.5;
-}
-
-@keyframes glowing {
-    0% { 
-        background-color: #82AE46;
-        box-shadow: 0 0 5px #aaa;
-        opacity: 0; 
-        transition: 0.8s;
-        }
-    50% {
-        background-color: #82AE46;
-        box-shadow: 0 0 12px #82AE46;
-        opacity: 1; 
-        }
-    100% {
-        background-color: #82AE46; 
-        box-shadow: 0 0 5px #ccc; 
-        opacity: 1;
-        transition: 0.8s;
-        }
 }
 
 /* End: Vegetypes */
