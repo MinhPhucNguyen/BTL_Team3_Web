@@ -42,29 +42,6 @@ body.dark {
     --title-icon-color: #CCC;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
-}
-
-body.dark::-webkit-scrollbar-thumb:hover,
-body.dark .activity-data::-webkit-scrollbar-thumb:hover {
-    background: #3A3B3C;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -75,10 +52,6 @@ nav {
     background-color: var(--panel-color);
     border-right: 1px solid var(--border-color);
     transition: var(--tran-05);
-}
-
-nav.close {
-    width: 73px;
 }
 
 nav .logo-name {
@@ -96,11 +69,6 @@ nav .logo-name .logo_name {
     color: #82ae46;
     margin-left: 20px;
     transition: var(--tran-05);
-}
-
-nav.close .logo_name {
-    opacity: 0;
-    pointer-events: none;
 }
 
 nav .menu-items {
@@ -152,11 +120,6 @@ body.dark li a:hover:before {
     font-weight: 400;
     color: var(--black-light-color);
     transition: var(--tran-05);
-}
-
-nav.close li a .link-name {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .nav-links li a:hover i,
@@ -227,11 +190,6 @@ body.dark .switch:before {
     transition: var(--tran-05);
 }
 
-nav.close~.dashboard {
-    left: 73px;
-    width: calc(100% - 73px);
-}
-
 .dashboard .top {
     position: fixed;
     top: 0;
@@ -250,11 +208,6 @@ nav.close~.dashboard {
     font-size: 26px;
     color: var(--text-color);
     cursor: pointer;
-}
-
-nav.close~.dashboard .top {
-    left: 73px;
-    width: calc(100% - 73px);
 }
 
 .dashboard .top .sidebar-toggle {
@@ -375,7 +328,7 @@ nav.close~.dashboard .top {
     align-items: center;
 }
 
-.table-list{
+.table-list {
     width: 70%;
 }
 
@@ -383,7 +336,6 @@ table {
     width: 100%;
     border: 1px solid var(--toggle-color);
     border-radius: 5px;
-    
 }
 
 thead {
@@ -468,7 +420,7 @@ a {
 .button-add p {
     font-size: 16px;
     color: #000;
-    font-weight: 600;   
+    font-weight: 600;
 }
 
 .button-delete .button-delete-inner {
@@ -502,8 +454,6 @@ a {
     background-color: rgb(77, 97, 225);
     cursor: pointer;
 }
-
-
 
 .product-btn {
     display: flex;
@@ -627,11 +577,11 @@ textarea {
     height: 100%;
 }
 
-.product__img>div{
+.product__img>div {
     text-align: center;
 }
 
-.product__img div p{
+.product__img div p {
     font-size: 20px;
     font-weight: 600;
 }
@@ -651,7 +601,7 @@ textarea {
     font-size: 48px;
 }
 
-.add__img div{
+.add__img div {
     display: none;
 }
 
@@ -729,16 +679,6 @@ textarea {
 
 .hide {
     display: none;
-}
-
-.modal-close-icon {
-    text-align: right;
-}
-
-.modal-close-icon i {
-    font-size: 38px;
-    padding-right: 13px;
-    padding-top: 4px;
 }
 
 .modal-upload {

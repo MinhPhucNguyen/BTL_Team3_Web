@@ -41,29 +41,6 @@ body.dark {
     --title-icon-color: #CCC;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0b3cc1;
-}
-
-body.dark::-webkit-scrollbar-thumb:hover,
-body.dark .activity-data::-webkit-scrollbar-thumb:hover {
-    background: #3A3B3C;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -76,10 +53,6 @@ nav {
     transition: var(--tran-05);
 }
 
-nav.close {
-    width: 73px;
-}
-
 nav .logo-name {
     display: flex;
     align-items: center;
@@ -89,23 +62,12 @@ nav .logo-name a {
     text-decoration: none;
 }
 
-nav .logo-image img {
-    width: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 nav .logo-name .logo_name {
     font-size: 30px;
     font-weight: 600;
     color: #82ae46;
     margin-left: 10px;
     transition: var(--tran-05);
-}
-
-nav.close .logo_name {
-    opacity: 0;
-    pointer-events: none;
 }
 
 nav .menu-items {
@@ -157,11 +119,6 @@ body.dark li a:hover:before {
     font-weight: 400;
     color: var(--black-light-color);
     transition: var(--tran-05);
-}
-
-nav.close li a .link-name {
-    opacity: 0;
-    pointer-events: none;
 }
 
 .nav-links li a:hover i,
@@ -232,11 +189,6 @@ body.dark .switch:before {
     transition: var(--tran-05);
 }
 
-nav.close~.dashboard {
-    left: 73px;
-    width: calc(100% - 73px);
-}
-
 .dashboard .top {
     position: fixed;
     top: 0;
@@ -249,11 +201,6 @@ nav.close~.dashboard {
     background-color: var(--panel-color);
     transition: var(--tran-05);
     z-index: 10;
-}
-
-nav.close~.dashboard .top {
-    left: 73px;
-    width: calc(100% - 73px);
 }
 
 .dashboard .top .sidebar-toggle {
