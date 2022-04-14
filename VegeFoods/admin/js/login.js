@@ -4,7 +4,7 @@ window.
 
 button.addEventListener('click', function(e) {
     e.preventDefault()
-    location.assign('http://127.0.0.1:5500/dashboard.html')
+    location.assign('http://127.0.0.1:5500/admin/dashboard.html')
 })
 
 
