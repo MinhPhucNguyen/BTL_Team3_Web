@@ -10,8 +10,3 @@ button.addEventListener('click', function(e) {
 
 // localStorage.setItem('username', 'Nguyen Xuan Minh')
 // localStorage.setItem('password', '123456')
-
-
-
-
-
