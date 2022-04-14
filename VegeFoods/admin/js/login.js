@@ -16,3 +16,8 @@ button.addEventListener('click', function(e) {
 })
 
 
+<<<<<<< HEAD
+=======
+// localStorage.setItem('username', 'Nguyen Xuan Minh')
+// localStorage.setItem('password', '123456')
+>>>>>>> 4e00ce051eac7421ac6421bfe74bfebc6f307071
