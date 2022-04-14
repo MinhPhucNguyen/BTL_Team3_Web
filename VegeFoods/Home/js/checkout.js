@@ -2,7 +2,7 @@
 var statusOfFirstName = document.querySelector("#statusOfFirstname")
 var firstName = document.querySelector("#txtFirstname")
 function checkFirstname() {
-    var firstNameRegex = /^[a-zA-_-]{3,16}$/
+    var firstNameRegex = /[a-zA ]{3,16}$/
     if(firstNameRegex.test(firstName.value)){
         statusOfFirstName.textContent = "*Valid"
         statusOfFirstName.style.color = "#82AE46"
@@ -23,7 +23,7 @@ firstName.addEventListener("focusout", function(e) {
 var statusOfLastName = document.querySelector("#statusOfLastname")
 var lastName = document.querySelector("#txtLastname")
 function checkLastname() {
-    var lastNameRegex = /^[a-zA-_- ]{3,30}$/
+    var lastNameRegex = /[a-zA ]{3,30}$/
     if(lastNameRegex.test(lastName.value)){
         statusOfLastName.textContent = "*Valid"
         statusOfLastName.style.color = "#82AE46"
@@ -64,7 +64,7 @@ country.addEventListener("focusout", function(e) {
 var statusOfAddress = document.querySelector("#statusOfAddress")
 var address = document.querySelector("#txtAddress")
 function checkAddress() {
-    var addressRegex = /^(?:\w+\.?,?\s?){1,60}$/igm;
+    var addressRegex = /^(?:\w+\.?,?\s?){1,60}$/gm;
     if(addressRegex.test(address.value)){
          statusOfAddress.textContent = "*Valid"
          statusOfAddress.style.color = "#82AE46"
