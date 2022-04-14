@@ -79,3 +79,8 @@ saveBtn.onclick = function() {
 deleteAllBtn.onclick = function() {
     tbodyElement.innerHTML = ""
 }
+
+
+
+
+console.log(123)
