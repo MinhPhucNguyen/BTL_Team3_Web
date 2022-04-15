@@ -54,8 +54,11 @@ nav {
 }
 
 nav .logo-name {
-    display: flex;
-    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #82ae46;
+    margin-left: 20px;
+    transition: var(--tran-05);
 }
 
 nav .logo-name a {
@@ -66,12 +69,11 @@ nav .logo-name .logo_name {
     font-size: 30px;
     font-weight: 600;
     color: #82ae46;
-    margin-left: 10px;
     transition: var(--tran-05);
 }
 
 nav .menu-items {
-    margin-top: 40px;
+    margin-top: 20px;
     height: calc(100% - 90px);
     display: flex;
     flex-direction: column;

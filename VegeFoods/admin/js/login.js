@@ -13,6 +13,7 @@ button.addEventListener('click', function(e) {
     } else {
         alert("Nhập lại tài khoản và mật khẩu")
     }
+<<<<<<< HEAD
 })
 
 window.addEventListener('keydown', function(e) {
@@ -22,3 +23,6 @@ window.addEventListener('keydown', function(e) {
 })
 
 
+=======
+})
+>>>>>>> f842a985ce467ad8bc4244add4580f4834bf7120
