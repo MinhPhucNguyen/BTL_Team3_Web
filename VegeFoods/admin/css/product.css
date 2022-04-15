@@ -91,20 +91,6 @@ nav .menu-items {
     position: relative;
 }
 
-.nav-links li a:hover:before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background-color: var(--primary-color);
-}
-
-body.dark li a:hover:before {
-    background-color: var(--text-color);
-}
-
 .menu-items li a i {
     font-size: 20px;
     min-width: 45px;
@@ -125,11 +111,6 @@ body.dark li a:hover:before {
 .nav-links li a:hover i,
 .nav-links li a:hover .link-name {
     color: var(--primary-color);
-}
-
-body.dark .nav-links li a:hover i,
-body.dark .nav-links li a:hover .link-name {
-    color: var(--text-color);
 }
 
 .menu-items .logout-mode {
@@ -316,6 +297,7 @@ body.dark .switch:before {
 }
 
 .menu-product p {
+    color: var(--text-color);
     font-size: 24px;
     font-weight: 600;
     margin-left: 20px;
