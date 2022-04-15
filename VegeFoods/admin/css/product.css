@@ -108,6 +108,11 @@ nav .menu-items {
     transition: var(--tran-05);
 }
 
+.nav-links li a:hover i,
+.nav-links li a:hover .link-name {
+    color: var(--primary-color);
+}
+
 .menu-items .logout-mode {
     padding-top: 10px;
     border-top: 1px solid var(--border-color);
@@ -292,6 +297,7 @@ body.dark .switch:before {
 }
 
 .menu-product p {
+    color: var(--text-color);
     font-size: 24px;
     font-weight: 600;
     margin-left: 20px;
