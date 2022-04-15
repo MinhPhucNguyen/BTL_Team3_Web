@@ -11,3 +11,8 @@ button.addEventListener('click', function(e) {
     localStorage.setItem('password', passwordInput.value)
 })
 
+window.addEventListener('keydown', function(e) {
+    if(e.which === 13) {
+        location.assign('http://127.0.0.1:5500/admin/dashboard.html')
+    }
+})
