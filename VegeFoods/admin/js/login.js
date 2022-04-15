@@ -11,14 +11,12 @@ button.addEventListener('click', function(e) {
     if (nameInput.value === localName && passwordInput.value === localPassword) {
         location.assign('http://127.0.0.1:5500/admin/dashboard.html')
     } else {
-        alert("Nhập lại tài khoản và mật khẩu")
+        alert("Re-enter username and password")
     }
 })
 
 window.addEventListener('keydown', function(e) {
-    if(e.which === 13) {
+    if (e.which === 13) {
         location.assign('http://127.0.0.1:5500/admin/dashboard.html')
     }
 })
-
-
