@@ -8,11 +8,9 @@ const localPassword = localStorage.getItem('password')
 
 button.addEventListener('click', function(e) {
     e.preventDefault()
-    if(nameInput.value === localName && passwordInput.value === localPassword) {
+    if (nameInput.value === localName && passwordInput.value === localPassword) {
         location.assign('http://127.0.0.1:5500/admin/dashboard.html')
     } else {
         alert("Nhập lại tài khoản và mật khẩu")
     }
 })
-
-

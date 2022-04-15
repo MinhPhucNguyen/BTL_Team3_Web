@@ -10,4 +10,3 @@ button.addEventListener('click', function(e) {
     localStorage.setItem('name', nameInput.value)
     localStorage.setItem('password', passwordInput.value)
 })
-
